@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "sdkBackgroundAudioPlayerVB", "sdkBackgroundAudioPlayerVB\sdkBackgroundAudioPlayerVB.vbproj", "{3C399C54-F183-4D81-A0A1-963D78547B6E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MyAudioPlaybackAgent", "MyAudioPlaybackAgent\MyAudioPlaybackAgent.vbproj", "{E738D2DB-EB02-4743-BF72-486267F3C823}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C399C54-F183-4D81-A0A1-963D78547B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C399C54-F183-4D81-A0A1-963D78547B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C399C54-F183-4D81-A0A1-963D78547B6E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3C399C54-F183-4D81-A0A1-963D78547B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C399C54-F183-4D81-A0A1-963D78547B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C399C54-F183-4D81-A0A1-963D78547B6E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E738D2DB-EB02-4743-BF72-486267F3C823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E738D2DB-EB02-4743-BF72-486267F3C823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E738D2DB-EB02-4743-BF72-486267F3C823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E738D2DB-EB02-4743-BF72-486267F3C823}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
