@@ -1,0 +1,13 @@
+﻿// Resource comments should provide guidance to localizers. They should clarify 
+// the sense or context, and point out any constraints on the string. 
+// It’s not necessary to have a comment in all cases. Add comments where useful. 
+// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+{
+     "helpFlyoutAriaLabel"         : "Help flyout",
+
+    "settingsHelpLabel"                       : "Help",
+    "settingsHelpLabel.comment"              : "Text for Help button in Settings.",
+
+    "settingsHelpContent"                       : "<h3>Help</h3><p>Select a color from the color picker along the top edge of the app.</p><p>Rotate the color mixer to set the level of the selected color.</p><p>The color mixer can be rotated using the following input types:</p><ul><li>Touch: rotate with two or more fingers.</li><li>Touchpad: rotate with two or more fingers</li><li>Mouse: left button: tap the transitory buttons</li><li>Mouse: wheel: hover over the color mixer, hold the CTRL and SHIFT buttons down, and rotate wheel</li><li>Pen: tap the transitory buttons</li><li>Keyboard: press the Left and Right arrow buttons</li>",
+    "settingsHelpContent.comment"              : "HTML content of Help in Settings."
+}

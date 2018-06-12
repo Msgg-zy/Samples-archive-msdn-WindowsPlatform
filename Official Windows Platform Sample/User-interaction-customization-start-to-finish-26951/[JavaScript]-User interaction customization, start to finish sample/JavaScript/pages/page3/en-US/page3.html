@@ -1,0 +1,92 @@
+﻿<!--
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+-->
+<!--
+    NOTE:
+    For this sample, page3.html is provided as a standalone, localized HTML file.
+    (The rich HTML content can be easily edited in an HTML or text editor.)
+    If possible, avoid localizing app code and use standard string resources in .resjson files.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ColorMixer (DOM)</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/page3/page3.css" rel="stylesheet" />
+    <script src="/pages/page3/page3.js"></script>
+    <!-- ColorMixer files -->
+    <script src="colormixer.js"></script>
+    <script src="colormixer_inputprocessor.js"></script>
+    <script src="colormixer_manipulationmanager.js"></script>
+</head>
+<body>
+    <!-- Page content -->
+    <div class="page page3" id="output">
+        <!-- Banner (title area) -->
+        <header role="banner" data-win-res="{attributes: { 'aria-label' : 'bannerAriaLabel'}}">
+            <div class="headlineimagearea">
+                <!-- For the purposes of this example, we specify a globalized image from the app's package (ms-appx).
+                     For images included in the app package, Windows identifies the correct image through the
+                     file structure and/or decoration to the file name.
+                     When you provide a globalized image resource in your template, supply only the file name.
+                     See Globalizing your app at http://go.microsoft.com/fwlink/?LinkId=258266. -->
+                <img id="1" src="ms-appx:///images/square70logo.png" />
+                <!-- In some cases, you might want to include the back button:
+                     <button data-win-control="WinJS.UI.BackButton"></button>
+                     The back button checks the navigation stack and is automatically enabled or disabled.
+                     Note that the back button is not recommended in the flat navigation pattern.
+                     See Navigation design for Windows Store apps (http://msdn.microsoft.com/en-us/library/windows/apps/hh761500.aspx). -->
+            </div>
+            <!-- RGB color picker -->
+            <div class="ColorSelector" id="colorSelector">
+                <!-- The aria-label attribute can be used when:
+                        •the name of an element cannot be determined programmatically from the content of the element
+                        •providing a visible label and/or tooltip is not the desired user experience
+                     However, if the label text is visible on screen, you should use aria-labelledby instead of aria-label. -->
+                <div class="Color" id="red" aria-labelledby="redLabel redValue" tabindex="0" accesskey="R">
+                    <span class="ColorLabel" id="redLabel" data-win-res="{textContent: 'colorpicker_red'}"></span>
+                    <span class="ColorValue" id="redValue"></span>
+                </div>
+                <div class="Color" id="green" aria-labelledby="greenLabel greenValue" tabindex="0" accesskey="G">
+                    <span class="ColorLabel" id="greenLabel" data-win-res="{textContent: 'colorpicker_green'}"></span>
+                    <span class="ColorValue" id="greenValue"></span>
+                </div>
+                <div class="Color" id="blue" aria-labelledby="blueLabel blueValue" tabindex="0" accesskey="B">
+                    <span class="ColorLabel" id="blueLabel" data-win-res="{textContent: 'colorpicker_blue'}"></span>
+                    <span class="ColorValue" id="blueValue"></span>
+                </div>
+            </div>
+        </header>
+        <!--  -->
+        <section role="main" data-win-res="{attributes: { 'aria-label' : 'mainContentAriaLabel'}}">
+            <div id="status"></div>
+            <div id="controlArea">
+                <!-- Set accessibility attributes.
+                    Use Accessible Rich Internet Applications (WAI-ARIA) attributes to expose
+                    associated values important to understanding the state of the UI element.
+                    A control with a role set to "slider", "progressbar", or "spinbutton"
+                    must expose the aria-valuemax, aria-valuemin, and aria-valuenow attributes.
+                    aria-valuenow is set dynamically in ColorMixer.js to reflect changes to the element.
+                    Use the aria-valuetext attribute when the value cannot be represented as a number.-->
+                <div id="colorMixer" data-win-control="Target.ColorMixer" data-win-options="{}" tabindex="0" accesskey="M" role="spinbutton"></div>
+            </div>
+        </section>
+        <!-- flyout -->
+        <div id="flyout" data-win-control="WinJS.UI.Flyout" data-win-res="{attributes: { 'aria-label' : 'colorSelectorFlyout'}}">
+            <div id="flyoutContent"></div>
+        </div>
+    </div>
+</body>
+</html>

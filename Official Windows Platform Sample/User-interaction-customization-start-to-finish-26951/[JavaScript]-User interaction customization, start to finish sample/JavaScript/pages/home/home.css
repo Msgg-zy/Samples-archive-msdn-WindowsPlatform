@@ -1,0 +1,10 @@
+﻿.home section[role=main] {
+    margin-left: 120px;
+}
+
+.home div[role=contentinfo] {
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-top: 20px;
+    font-size: 60%;
+}

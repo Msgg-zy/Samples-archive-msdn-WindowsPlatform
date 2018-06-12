@@ -1,0 +1,85 @@
+﻿// Resource comments should provide guidance to localizers. They should clarify 
+// the sense or context, and point out any constraints on the string. 
+// It’s not necessary to have a comment in all cases. Add comments where useful. 
+// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836.
+
+{
+// App manifest resources.
+    // All values of the token string created for the DisplayName element in the package manifest must match 
+    // the names that you’ve reserved for the app at the Windows Store. Otherwise, a validation error will occur 
+    // when you upload the package to the Store.
+    "displayName"                       : "ColorMixer (JavaScript)",
+    "_displayName.comment"              : "The title of the application that appears on the start screen, search page, and so on (up to 256 characters in length).",
+
+
+    "description"                       : "Create custom user interactions that are intuitive and engaging, and at the same time efficient and consistent across all input devices. Follow the guidelines, best practices, and examples described here to define these user experiences for your Windows Store app.",
+    "_description.comment"              : "Description of the app (up to 2048 characters).",
+
+    "shortName"                         : "ColorMixer",
+    "_shortName.comment"                : "Short name for the app displayed on the tile (up to 40 characters).",
+// App manifest resources.
+
+// UI resources
+    "appName"              : "Windows Developer Content: ColorMixer",
+    "_appName.comment"     : "App name displayed on opening page.",
+
+    "greeting"              : "Hello",
+    "_greeting.comment"     : "A welcome greeting.",
+
+    "disclaimer"              : "THIS CODE AND INFORMATION IS PROVIDED 'AS IS' WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.\n\nCopyright (c) Microsoft Corporation. All rights reserved",
+    "_disclaimer.comment"     : "Body text for usage disclaimer message box.",
+
+    "disclaimerTitle"              : "Disclaimer",
+    "_disclaimerTitle.comment"     : "Title for usage disclaimer message box.",
+
+    "disclaimerButton"              : "Accept",
+    "_disclaimerButton.comment"     : "Text for usage disclaimer message box button.",
+
+    "navbarHomeLabel"              : "Home",
+    "_navbarHomeLabel.comment"     : "Text for NavBar Home button.",
+
+    "navbarHomeTooltip"              : "Go to home page",
+    "_navbarHomeTooltip.comment"     : "Tooltip text for Home button on NavBar.",
+
+    "navbarPage2Label"              : "ColorMixer (DOM)",
+    "_navbarPage2Label.comment"     : "Text for Page 2 button on NavBar.",
+
+    "navbarPage2Tooltip"              : "Go to ColorMixer (DOM)",
+    "_navbarPage2Tooltip.comment"     : "Tooltip text for Page 2 button on NavBar.",
+
+    "navbarPage3Label"              : "ColorMixer (WinRT)",
+    "_navbarPage3Label.comment"     : "Text for Page 3 button on NavBar.",
+
+    "navbarPage3Tooltip"              : "Go to ColorMixer (WinRT)",
+    "_navbarPage3Tooltip.comment"     : "Tooltip text for Page 3 button on NavBar.",
+
+    "appbarHelpLabel"              : "Help",
+    "_appbarHelpLabel.comment"     : "Text for Help button on AppBar.",
+
+    "appbarHelpTooltip"              : "Show help for this app",
+    "_appbarHelpTooltip.comment"     : "Tooltip text for Help button on AppBar.",
+
+    "bannerAriaLabel"              : "Banner content",
+    "mainContentAriaLabel"         : "Main content",
+
+    "homePageHeadline"              : "User interaction customization, start to finish (HTML)",
+    "_homePageHeadline.comment"     : "Headline or title for the Home page content.",
+
+    "homePageDeck"         : "This instructional sample app for Windows 8.1 shows how to create custom user interactions that are intuitive and engaging, and at the same time efficient and consistent across all input devices.",
+    "_homePageDeck.comment"    : "Phrase, sentence, or several sentences such as a quick blurb or content teaser.",
+
+    "linkColorMixerDOM"              : "ColorMixer (DOM)",
+    "_linkColorMixerDOM.comment"     : "Text for link to ColorMixer (DOM) page.",
+    "linkColorMixerWinRT"              : "ColorMixer (WinRT)",
+    "_linkColorMixerWinRT.comment"     : "Text for link to ColorMixer (WinRT) page.",
+
+    // Home page content: see \pages\home\[locale]\home.html
+
+    "colorpicker_red"           : "Red",
+    "colorpicker_green"         : "Green",
+    "colorpicker_blue"          : "Blue",
+    "colorSelectorFlyout"       : "Color selector flyout"
+
+    // Second page content: see \pages\home\[locale]\page2.html
+// End UI resources
+}

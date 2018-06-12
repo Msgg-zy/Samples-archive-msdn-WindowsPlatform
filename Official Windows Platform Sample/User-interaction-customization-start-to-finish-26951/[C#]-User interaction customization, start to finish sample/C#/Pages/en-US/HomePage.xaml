@@ -1,0 +1,126 @@
+﻿<!-- 
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF 
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO 
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A 
+PARTICULAR PURPOSE. 
+ 
+Copyright (c) Microsoft Corporation. All rights reserved 
+-->
+<Page
+    x:Name="page1"
+    x:Class="ColorMixer.Pages.HomePage"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ColorMixer.Pages"
+    xmlns:common="using:ColorMixer.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image 
+                Grid.Column="0"
+                x:Name="logoimage" 
+                HorizontalAlignment="Center" 
+                Height="100" 
+                VerticalAlignment="Center" 
+                Width="100" 
+                Source="ms-appx:///Assets/square70logo.png" 
+                IsHitTestVisible="False"/>
+            <TextBlock 
+                Grid.Column="1" 
+                Text="Windows Developer Content: ColorMixer" 
+                Style="{StaticResource HeaderTextBlockStyle}" 
+                x:Uid="AppName" 
+                x:Name="pageTitle" 
+                IsHitTestVisible="False" 
+                TextWrapping="NoWrap" 
+                VerticalAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="1">
+                <TextBlock Style="{StaticResource TitleTextStyle}" Text="Intro" x:Uid="Page1Intro"></TextBlock>
+                <RichTextBlock Style="{StaticResource BodyRichTextBlockStyle}" >
+                    <Paragraph>
+                        <LineBreak/>
+                        While other operating systems focus primarily on touch input, Windows enables you to build the kind of app you want without constraints: consumption apps, productivity apps, or innovative hybrid apps on PCs, laptops, tablets and pretty much any form factor out there (and even some that aren’t quite there yet).
+                    </Paragraph>
+                    <Paragraph>
+                        <LineBreak/>
+                        This is the companion sample for the User interaction customization, start to finish topics (
+                        <Hyperlink NavigateUri="http://go.microsoft.com/fwlink/?LinkID=329868">HTML</Hyperlink> and
+                        <Hyperlink NavigateUri="http://go.microsoft.com/fwlink/?LinkID=389067">XAML</Hyperlink>).
+                    </Paragraph>
+                </RichTextBlock>
+                <TextBlock Style="{StaticResource TitleTextStyle}">
+                    <LineBreak/>
+                    Description
+                </TextBlock>
+                <RichTextBlock Style="{StaticResource BodyRichTextBlockStyle}" >
+                    <Paragraph>
+                        <LineBreak/>
+                        Customize the user interaction experiences in your Windows Store app based on input from various sources (including touch, touchpad, mouse, pen/stylus, and keyboard) and input-device modes (such as touch keyboard, mouse wheel, and pen eraser). The sample follows Windows 8.1 principles, recommendations, and implementation details for custom controls, UI accessibility, and customized interactions.
+                    </Paragraph>
+                    <Paragraph>
+                        <LineBreak/>
+                        In the sample, we create a color mixer in the form of a square object that takes direct input from a touch screen, touchpad, mouse, pen/stylus, or keyboard. It uses this data to specify an RGB color and an angle of rotation, which it translates to a corresponding red, green, or blue level.
+                    </Paragraph>
+                    <Paragraph>
+                        <LineBreak/>
+                        <Bold>Note</Bold>
+                        We recommend that you use the platform control libraries (
+                        <Hyperlink NavigateUri="http://go.microsoft.com/fwlink/?LinkID=389074">HTML</Hyperlink> and
+                        <Hyperlink NavigateUri="http://go.microsoft.com/fwlink/?LinkID=389073">XAML</Hyperlink>) wherever possible. 
+                        The controls in these libraries provide the full Windows 8.1 user interaction experience, 
+                        including standard interactions, animated physics effects, visual feedback, and accessibility. 
+                        If you don't need customized interaction support, use these built-in controls.
+                    </Paragraph>
+                    <Paragraph>
+                        <LineBreak/>
+                        This app is based on the
+                        <Hyperlink NavigateUri="http://go.microsoft.com/fwlink/?LinkID=325593">Flat navigation sample</Hyperlink> and meets all basic Windows Store certification requirements and covers:</Paragraph>
+                    <Paragraph TextIndent="50">• Custom controls</Paragraph>
+                    <Paragraph TextIndent="50">• Handling input from various input devices</Paragraph>
+                    <Paragraph TextIndent="50">• Designing interactions based on Windows user interaction guidelines</Paragraph>
+                    <Paragraph TextIndent="50">• Processing pointer and gesture input</Paragraph>
+                    <!-- Don't use a button when the action is to go to another page;
+                    use direct links within the content or the nav bar to move between pages.
+                    See Guidelines and checklist for buttons at http://go.microsoft.com/fwlink/?LinkID=313598 -->
+                    <Paragraph>
+                        <LineBreak/>
+                        <Hyperlink 
+                            x:Name="linkColorMixerXAML" Click="linkColorMixerXAML_Click">ColorMixer (XAML)</Hyperlink> || 
+                        <Hyperlink 
+                            x:Name="linkColorMixerWinRT" Click="linkColorMixerWinRT_Click">ColorMixer (WinRT)</Hyperlink>
+                    </Paragraph>
+                </RichTextBlock>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

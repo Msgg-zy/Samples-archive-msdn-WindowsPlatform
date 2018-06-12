@@ -1,0 +1,49 @@
+﻿<!-- 
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF 
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO 
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A 
+PARTICULAR PURPOSE. 
+ 
+Copyright (c) Microsoft Corporation. All rights reserved 
+-->
+<SettingsFlyout
+    x:Class="ColorMixer.Settings.HelpSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ColorMixer.Settings"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    IconSource="Assets/SmallLogo.png"
+    Title="Help"
+    d:DesignWidth="346">
+
+    <!-- This StackPanel acts as a root panel for vertical layout of the content sections -->
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+
+        <!-- The StackPanel(s) below define individual content sections -->
+
+        <!-- Content Section 1-->
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <!-- Section 1 header -->
+            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Help" />
+
+            <!-- Section 1 body -->
+            <RichTextBlock Style="{StaticResource BodyRichTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap">
+                <Paragraph>Select a color from the color picker along the top edge of the app.</Paragraph>
+                <Paragraph>Rotate the color mixer to set the level of the selected color.</Paragraph>
+                <Paragraph>The color mixer can be rotated using the following input types:</Paragraph>
+                <Paragraph TextIndent="10">• Touch: rotate with two or more fingers.</Paragraph>
+                <Paragraph TextIndent="10">• Touchpad: rotate with two or more fingers</Paragraph>
+                <Paragraph TextIndent="10">• Mouse: left button: tap the transitory buttons</Paragraph>
+                <Paragraph TextIndent="10">• Mouse: wheel: hover over the color mixer, hold the CTRL and SHIFT buttons down, and rotate wheel</Paragraph>
+                <Paragraph TextIndent="10">• Pen: tap the transitory buttons</Paragraph>
+                <Paragraph TextIndent="10">• Keyboard: press the Left and Right arrow buttons</Paragraph>
+            </RichTextBlock>
+        </StackPanel>
+
+        <!-- Define more Content Sections below as necessary -->
+
+    </StackPanel>
+</SettingsFlyout>

@@ -1,0 +1,81 @@
+﻿<!--
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+-->
+
+<!--
+    NOTE: 
+    For this sample, home.html is provided as a standalone, localized HTML file.
+    (The rich HTML content can be easily edited in an HTML or text editor.)
+    If possible, avoid localizing app code and use standard string resources in .resjson files.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+</head>
+<body>
+    <!-- Page content -->
+    <div class="page home" id="output" >
+        <!-- Banner (title area) -->
+        <header role="banner" data-win-res="{attributes: { 'aria-label' : 'bannerAriaLabel'}}">
+            <div class="headlineimagearea">
+                <!-- For this example, we specify a globalized image from the app's package (ms-appx).
+                     For images included in the app package, Windows identifies the correct image through the
+                     file structure and/or decoration to the file name.
+                     See Globalizing your app at http://go.microsoft.com/fwlink/?LinkId=258266. -->
+                <img id="logoimage" src="ms-appx:///images/square70logo.png" />
+                <!-- In some cases, you might want to include the back button:
+                     <button data-win-control="WinJS.UI.BackButton"></button>
+                     The back button checks the navigation stack and is automatically enabled or disabled.
+                     Note that the back button is not recommended in the flat navigation pattern.
+                     See Navigation design for Windows Store apps (http://msdn.microsoft.com/en-us/library/windows/apps/hh761500.aspx). -->
+            </div>
+            <!-- Localizable page heading (/strings/<lang spec>). -->
+            <h1 class="headlinetextarea win-type-ellipsis" data-win-res="{textContent: 'homePageHeadline'}"></h1>
+        </header>
+        <!--  -->
+        <section role="main" data-win-res="{attributes: { 'aria-label' : 'mainContentAriaLabel'}}">
+            <!-- Use the deck to provide more specific information. -->
+            <!-- Localizable content title (/strings/<lang spec>). -->
+            <h2 id="homePageDeck" data-win-res="{textContent: 'homePageDeck'}"></h2>
+            <!-- HTML page content to be localized -->            
+            <p>While other operating systems focus primarily on touch input, Windows enables you to build the kind of app you want without constraints: consumption apps, productivity apps, or innovative hybrid apps on PCs, laptops, tablets and pretty much any form factor out there (and even some that aren’t quite there yet).</p>
+            <p>This is the companion sample for the User interaction customization, start to finish (<a href="http://go.microsoft.com/fwlink/?LinkID=329868">HTML</a> and <a href="http://go.microsoft.com/fwlink/p/?LinkID=389067">XAML</a>) topic.</p>
+            <h3>Description</h3>
+            <p>Customize the user interaction experiences in your Windows Store app based on input from various sources (including touch, touchpad, mouse, pen/stylus, and keyboard) and input-device modes (such as touch keyboard, mouse wheel, and pen eraser). The sample follows Windows 8.1 principles, recommendations, and implementation details for custom controls, UI accessibility, and customized interactions.</p>
+            <p>In this sample, a simple shape object that supports rotation is used to implement a basic color mixer. Select any of the three additive, primary colors (red, green, or blue) along the top of the page. When a color has been selected, the shape can accept user input from a touch screen, touchpad, mouse, pen, or keyboard either directly or indirectly through supporting input UI. All input data is processed by the object as a rotation interaction with the angle of rotation used to calculate the level (0 to 255) of the selected color. Each of the red, green, and blue color components can be selected and mixed at will.</p>
+            <p><strong>Note</strong> We recommend that you use the platform control libraries (<a href="http://go.microsoft.com/fwlink/p/?LinkID=389074">HTML</a> and <a href="http://go.microsoft.com/fwlink/p/?LinkID=389073">XAML</a>) wherever possible. The controls in these libraries provide the full Windows 8.1 user interaction experience, including standard interactions, animated physics effects, visual feedback, and accessibility. If you don't need customized interaction support, use these built-in controls. </p>
+            <p>This app is based on the Flat navigation sample and meets all basic Windows Store certification requirements and covers: </p>
+            <ul>
+                <li>Custom controls</li>
+                <li>Handling input from various input devices </li>
+                <li>Designing interactions based on Windows user interaction guidelines</li>
+                <li>Processing pointer and gesture input</li>
+            </ul>
+            <p>
+                <!-- Don't use a button when the action is to go to another page;
+                    use direct links within the content or the nav bar to move between pages.
+                    See Guidelines and checklist for buttons at http://go.microsoft.com/fwlink/?LinkID=313598 -->
+                <!-- Localizable link text (/strings/<lang spec>). -->
+                <a id="linkColorMixerDOM" href="/pages/page2/page2.html" data-win-res="{textContent: 'linkColorMixerDOM'}"></a> || 
+                <a id="linkColorMixerWinRT" href="/pages/page3/page3.html" data-win-res="{textContent: 'linkColorMixerWinRT'}"></a>
+            </p>
+        </section>
+    </div>
+</body>
+</html>

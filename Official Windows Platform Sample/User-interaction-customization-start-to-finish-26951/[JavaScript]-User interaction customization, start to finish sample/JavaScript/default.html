@@ -1,0 +1,72 @@
+﻿<!--
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ColorMixer</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- ColorMixer references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+</head>
+<body>
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/home/home.html'}"></div>
+    <!-- Navigation app bar -->
+    <div id="navBar" data-win-control="WinJS.UI.NavBar">
+        <div class="win-type-ellipsis" data-win-res="{textContent: 'appName'}"></div>
+        <div id="globalNav" data-win-control="WinJS.UI.NavBarContainer">
+            <div data-win-control="WinJS.UI.NavBarCommand" 
+                data-win-res="{winControl: {label:'navbarHomeLabel',tooltip:'navbarHomeTooltip'}}"
+                data-win-options="{
+                id:'homeButton',
+                icon: WinJS.UI.AppBarIcon.home,
+                location: '/pages/home/home.html',
+                splitButton: false
+                }">
+            </div>
+            <div data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-res="{winControl: {label:'navbarPage2Label',tooltip:'navbarPage2Tooltip'}}"
+                 data-win-options="{
+                id:'page2Button',
+                icon: WinJS.UI.AppBarIcon.page,
+                location: '/pages/page2/page2.html',
+                splitButton: false
+                }">
+            </div>
+            <div data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-res="{winControl: {label:'navbarPage3Label',tooltip:'navbarPage3Tooltip'}}"
+                 data-win-options="{
+                id:'page3Button',
+                icon: WinJS.UI.AppBarIcon.page,
+                location: '/pages/page3/page3.html',
+                splitButton: false
+                }">
+            </div>
+        </div>
+    </div>
+
+    <!-- Standard app bar -->
+    <div id="appBar" data-win-control="WinJS.UI.AppBar" data-win-options="{placement:'bottom'}">
+        <hr 
+            data-win-control="WinJS.UI.AppBarCommand" 
+            data-win-options="{type:'separator',section:'global'}" />
+        <button data-win-control="WinJS.UI.AppBarCommand" 
+            data-win-res="{winControl: {label:'appbarHelpLabel',tooltip:'appbarHelpTooltip'}}"
+            data-win-options="{id:'helpButton', icon:'help',section:'global', type: 'button'}"></button>
+    </div> 
+</body>
+</html>

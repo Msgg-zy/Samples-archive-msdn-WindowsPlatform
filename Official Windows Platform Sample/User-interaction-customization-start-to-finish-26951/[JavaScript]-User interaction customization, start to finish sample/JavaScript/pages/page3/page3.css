@@ -1,0 +1,56 @@
+﻿.page3 section[role=main] {
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 50px 1fr;
+    display: -ms-grid; 
+}
+.page3 section[role=main] #status {
+    -ms-grid-row: 1;
+    margin: 0px;
+    padding: 0px;
+}
+.page3 section[role=main] #controlArea {
+    -ms-grid-row: 2;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.ColorSelector {
+    /* Color picker replaces Page 2 heading (headlinetextarea as specified in default.css) in grid column 2. */
+    touch-action: none;
+    -ms-grid-column: 2;
+    -ms-grid-rows: 110px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    display: -ms-grid;
+    position: relative;
+    width: 100%;
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+    .ColorSelector .Color {
+        border-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+        .ColorSelector .Color#red {
+            -ms-grid-column: 1;
+            background-color: red;
+        }
+        .ColorSelector .Color#green {
+            -ms-grid-column: 2;
+            background-color: green;
+        }
+        .ColorSelector .Color#blue {
+            -ms-grid-column: 3;
+            background-color: blue;
+        }
+
+.ColorLabel {
+    color: ButtonHighlight;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+
+
+
