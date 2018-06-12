@@ -1,0 +1,90 @@
+﻿<!--
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+
+This template is intended for Windows Store apps that require a
+hierarchical system of navigation.
+This pattern uses a Hub navigation pattern (hub, section, and detail pages)
+that separates content into different sections and different levels of detail.
+
+This pattern is best for apps with large content collections or
+many distinct sections of content.
+
+Section pages are the second level of an app.
+They contain a preview, summary, or abstract for items associated with the section. 
+
+The Hierarchical navigation pattern (http://go.microsoft.com/fwlink/?LinkID=316374) is highlighted in
+our App features, start to finish series (http://go.microsoft.com/fwlink/?LinkID=316376).
+
+The navigation structure for this template is based on a data source defined in /js/data.js.
+The data is displayed through a ListView control (http://go.microsoft.com/fwlink/?LinkID=317813).
+
+For an overview of navigation design in Windows Store apps, see http://go.microsoft.com/fwlink/?LinkID=276817.
+For an introduction to the Hub template, see http://go.microsoft.com/fwlink/?LinkID=286574.
+For an introduction to the Hub control, see http://go.microsoft.com/fwlink/?LinkId=232511.
+For an introduction to the Page Control template, see http://go.microsoft.com/fwlink/?LinkId=232511.
+For Avoiding common certification failures, see http://go.microsoft.com/fwlink/?LinkId=232506.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sectionPage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/section/section.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/pages/section/section.js"></script>
+</head>
+
+<body>
+    <!-- These templates are used to display each item in the ListView declared below. -->
+    <div class="headertemplate" data-win-control="WinJS.Binding.Template">
+        <h2 class="section-subtitle" data-win-bind="textContent: subtitle"></h2>
+        <img class="section-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+        <h4 class="section-description" data-win-bind="innerHTML: description"></h4>
+    </div>
+    <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
+        <div class="item">
+            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+            <div class="item-info">
+                <h4 class="item-title" data-win-bind="textContent: title"></h4>
+                <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: subtitle"></h6>
+                <h4 class="item-description" data-win-bind="textContent: description"></h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- The content that will be loaded and displayed. -->
+    <div class="sectionpage fragment">
+        <header data-win-res="{attributes: { 'aria-label' : 'bannerAriaLabel'}}" role="banner">
+            <button data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle"></span>
+            </h1>
+        </header>
+        <section data-win-res="{attributes: { 'aria-label' : 'mainContentAriaLabel'}}" role="main">
+            <div class="itemslist win-selectionstylefilled" data-win-res="{attributes: { 'aria-label' : 'sectionContentAriaLabel'}}" data-win-control="WinJS.UI.ListView" data-win-options="{
+                    selectionMode: 'none',
+                    layout: {type: WinJS.UI.GridLayout, groupHeaderPosition: 'left'},
+                    currentItem: {type: WinJS.UI.ObjectType.item, index: 0, hasFocus: true},
+                    groupDataSource: select('.pagecontrol').winControl.groupDataSource,
+                    groupHeaderTemplate: select('.headertemplate'),
+                    itemDataSource: select('.pagecontrol').winControl.itemDataSource,
+                    itemTemplate: select('.itemtemplate'),
+                    oniteminvoked: select('.pagecontrol').winControl.itemInvoked
+                }">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

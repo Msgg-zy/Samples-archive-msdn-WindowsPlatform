@@ -1,0 +1,51 @@
+﻿/*
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+
+For an introduction to the Navigation template, see http://go.microsoft.com/fwlink/?LinkId=268354.
+For an introduction to the Page Control template, see http://go.microsoft.com/fwlink/?LinkId=232511.
+For Avoiding common certification failures, see http://go.microsoft.com/fwlink/?LinkId=232506.
+*/
+.itempage .content {
+    margin-left: 120px;
+    margin-right: 120px;
+    display: block;
+    height: 100%;
+    overflow-x: auto;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+    .itempage .content article {
+        /* Define a multi-column, horizontally scrolling article by default. */
+        column-fill: auto;
+        column-gap: 80px;
+        column-width: 480px;
+        height: calc(100% - 183px);
+        width: 480px;
+    }
+
+        .itempage .content article header .item-title {
+            margin-bottom: 19px;
+        }
+
+        .itempage .content article header .item-subtitle {
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+
+        .itempage .content article .item-image {
+            height: 240px;
+            width: 460px;
+        }
+
+        .itempage .content article .item-content p {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+

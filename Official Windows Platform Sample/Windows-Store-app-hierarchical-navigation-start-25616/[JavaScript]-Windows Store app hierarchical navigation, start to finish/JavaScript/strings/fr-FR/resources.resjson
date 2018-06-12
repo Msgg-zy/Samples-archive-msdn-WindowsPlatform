@@ -1,0 +1,273 @@
+﻿//// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+//// ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+//// THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+//// PARTICULAR PURPOSE.
+////
+//// Copyright (c) Microsoft Corporation. All rights reserved
+
+// Resource comments should provide guidance to localizers. They should clarify 
+// the sense or context, and point out any constraints on the string. 
+// It’s not necessary to have a comment in all cases. Add comments where useful. 
+// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836.
+
+// This non-EN-US resource file is provided for demonstration purposes only.
+
+{
+// App manifest resources.
+    // All values of the token string created for the DisplayName element in the package manifest must match 
+    // the names that you’ve reserved for the app at the Windows Store. Otherwise, a validation error will occur 
+    // when you upload the package to the Store.
+    "displayName"                       : "Hierarchical navigation template",
+    "_displayName.comment"              : "App display name",
+
+    "description"                       : "Windows Store app hierarchical navigation template (JavaScript).",
+    "_description.comment"              : "App description",
+
+    "shortName"                         : "HierNav",
+    "_shortName.comment"                : "Must be less than 13 characters and should be an abbreviation for the displayName",
+// End app manifest resources.
+
+// UI resources
+    "appName"              : "App nom",
+    "_appName.comment"     : "App name displayed on opening page.",
+
+    "greeting"              : "Bonjour",
+    "_greeting.comment"     : "A welcome greeting.",
+
+    "disclaimer"              : "CE CODE ET DE L'INFORMATION EST FOURNI «TEL QUEL», SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS, MAIS SANS S'Y LIMITER, LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET/OU D'ADEQUATION A UN USAGE PARTICULIER.\n\nCopyright (c) Microsoft Corporation. Tous droits réservés",
+    "_disclaimer.comment"     : "Body text for usage disclaimer message box.",
+    
+    "disclaimerTitle"              : "Désistement",
+    "_disclaimerTitle.comment"     : "Title for usage disclaimer message box.",
+
+    "disclaimerButton"              : "Accepter",
+    "_disclaimerButton.comment"     : "Text for usage disclaimer message box button.",
+
+    "appbarHelpLabel"              : "Aider",
+    "_appbarHelpLabel.comment"     : "Text for Help button on AppBar.",
+
+    "appbarHelpTooltip"              : "Afficher l'aide pour cette app",
+    "_appbarHelpTooltip.comment"     : "Tooltip text for Help button on AppBar.",
+
+    "bannerAriaLabel"              : "Banner content",
+    "mainContentAriaLabel"         : "Main content",
+    "sectionContentAriaLabel"         : "List of this section's items",
+// End UI resources.
+
+// Data resources (see \js\data.json).
+    "section1Title"                       : "Section 1 (fr-FR)",
+    "section1Title.comment"              : "Section title.",
+    "section1SubTitle"                       : "Section 1 Subtitle (fr-FR)",
+    "section1SubTitle.comment"              : "Section subtitle.",
+    "section1Subtext"                   : "[!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section1Description"                       : "[!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section1Description.comment"              : "Section description.",
+
+    "section2Title"                       : "Section 2 (fr-FR)",
+    "section2Title.comment"              : "Section title.",
+    "section2SubTitle"                       : "Section 2 Subtitle (fr-FR)",
+    "section2SubTitle.comment"              : "Section subtitle.",
+    "section2Subtext"                   : "[!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section2Description"                       : "[!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section2Description.comment"              : "Section description.",
+
+    "section3Title"                       : "Section 3 (fr-FR)",
+    "section3Title.comment"              : "Section title.",
+    "section3SubTitle"                       : "Section 3 Subtitle (fr-FR)",
+    "section3SubTitle.comment"              : "Section subtitle.",
+    "section3Description"                       : "[!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3Description.comment"              : "Section description.",
+
+    "section4Title"                       : "Section 4 (fr-FR)",
+    "section4Title.comment"              : "Section title.",
+    "section4SubTitle"                       : "Section 4 Subtitle (fr-FR)",
+    "section4SubTitle.comment"              : "Section subtitle.",
+    "section4Description"                       : "[!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section4Description.comment"              : "Section description.",
+
+    "section1item1Title"                       : "Section 1 Item 1 Title (fr-FR)",
+    "section1item1Title.comment"              : "Item title.",
+    "section1item2Title"                       : "Section 1 Item 2 Title (fr-FR)",
+    "section1item2Title.comment"              : "Item title.",
+    "section1item3Title"                       : "Section 1 Item 3 Title (fr-FR)",
+    "section1item3Title.comment"              : "Item title.",
+    "section1item4Title"                       : "Section 1 Item 4 Title (fr-FR)",
+    "section1item4Title.comment"              : "Item title.",
+    "section1item5Title"                       : "Section 1 Item 5 Title (fr-FR)",
+    "section1item5Title.comment"              : "Item title.",
+
+    "section1item1SubTitle"                       : "Section 1 Item 1 Subtitle (fr-FR)",
+    "section1item1SubTitle.comment"              : "Item subtitle.",
+    "section1item2SubTitle"                       : "Section 1 Item 2 Subtitle (fr-FR)",
+    "section1item2SubTitle.comment"              : "Item subtitle.",
+    "section1item3SubTitle"                       : "Section 1 Item 3 Subtitle (fr-FR)",
+    "section1item3SubTitle.comment"              : "Item subtitle.",
+    "section1item4SubTitle"                       : "Section 1 Item 4 Subtitle (fr-FR)",
+    "section1item4SubTitle.comment"              : "Item subtitle.",
+    "section1item5SubTitle"                       : "Section 1 Item 5 Subtitle (fr-FR)",
+    "section1item5SubTitle.comment"              : "Item subtitle.",
+
+    "section1item1Description"                       : "Description of Section 1 Item 1.",
+    "section1item1Description.comment"              : "Item description.",
+    "section1item2Description"                       : "Description of Section 1 Item 2.",
+    "section1item2Description.comment"              : "Item description.",
+    "section1item3Description"                       : "Description of Section 1 Item 3.",
+    "section1item3Description.comment"              : "Item description.",
+    "section1item4Description"                       : "Description of Section 1 Item 4.",
+    "section1item4Description.comment"              : "Item description.",
+    "section1item5Description"                       : "Description of Section 1 Item 5.",
+    "section1item5Description.comment"              : "Item description.",
+
+    "section1item1Content"                    : "Content of Section 1 Item 1.",
+    "section1item1Content.comment"              : "Item Content.",
+    "section1item2Content"                    : "Content of Section 1 Item 2.",
+    "section1item2Content.comment"              : "Item Content.",
+    "section1item3Content"                    : "Content of Section 1 Item 3.",
+    "section1item3Content.comment"              : "Item Content.",
+    "section1item4Content"                    : "Content of Section 1 Item 4.",
+    "section1item4Content.comment"              : "Item Content.",
+    "section1item5Content"                    : "Content of Section 1 Item 5.",
+    "section1item5Content.comment"              : "Item Content.",
+
+    "section2item1Title"                       : "Section 2 Item 1 Title (fr-FR)",
+    "section2item1Title.comment"              : "Item title.",
+    "section2item2Title"                       : "Section 2 Item 2 Title (fr-FR)",
+    "section2item2Title.comment"              : "Item title.",
+    "section2item3Title"                       : "Section 2 Item 3 Title (fr-FR)",
+    "section2item3Title.comment"              : "Item title.",
+
+    "section2item1SubTitle"                       : "Section 2 Item 1 Subtitle (fr-FR)",
+    "section2item1SubTitle.comment"              : "Item subtitle.",
+    "section2item2SubTitle"                       : "Section 2 Item 2 Subtitle (fr-FR)",
+    "section2item2SubTitle.comment"              : "Item subtitle.",
+    "section2item3SubTitle"                       : "Section 2 Item 3 Subtitle (fr-FR)",
+    "section2item3SubTitle.comment"              : "Item subtitle.",
+
+    "section2item1Description"                       : "Description of Section 2 Item 1.",
+    "section2item1Description.comment"              : "Item description.",
+    "section2item2Description"                       : "Description of Section 2 Item 2.",
+    "section2item2Description.comment"              : "Item description.",
+    "section2item3Description"                       : "Description of Section 2 Item 3.",
+    "section2item3Description.comment"              : "Item description.",
+
+    "section2item1Content"                    : "Content of Section 2 Item 1.",
+    "section2item1Content.comment"              : "Item Content.",
+    "section2item2Content"                    : "Content of Section 2 Item 2.",
+    "section2item2Content.comment"              : "Item Content.",
+    "section2item3Content"                    : "Content of Section 2 Item 3.",
+    "section2item3Content.comment"              : "Item Content.",
+
+    "section3item1Title"                       : "Section 3 Item 1 Title (fr-FR)",
+    "section3item1Title.comment"              : "Item title.",
+    "section3item2Title"                       : "Section 3 Item 2 Title (fr-FR)",
+    "section3item2Title.comment"              : "Item title.",
+    "section3item3Title"                       : "Section 3 Item 3 Title (fr-FR)",
+    "section3item3Title.comment"              : "Item title.",
+    "section3item4Title"                       : "Section 3 Item 4 Title (fr-FR)",
+    "section3item4Title.comment"              : "Item title.",
+    "section3item5Title"                       : "Section 3 Item 5 Title (fr-FR)",
+    "section3item5Title.comment"              : "Item title.",
+    "section3item6Title"                       : "Section 3 Item 6 Title (fr-FR)",
+    "section3item6Title.comment"              : "Item title.",
+    "section3item7Title"                       : "Section 3 Item 7 Title (fr-FR)",
+    "section3item7Title.comment"              : "Item title.",
+
+    "section3item1SubTitle"                       : "Section 3 Item 1 Subtitle (fr-FR)",
+    "section3item1SubTitle.comment"              : "Item subtitle.",
+    "section3item2SubTitle"                       : "Section 3 Item 2 Subtitle (fr-FR)",
+    "section3item2SubTitle.comment"              : "Item subtitle.",
+    "section3item3SubTitle"                       : "Section 3 Item 3 Subtitle (fr-FR)",
+    "section3item3SubTitle.comment"              : "Item subtitle.",
+    "section3item4SubTitle"                       : "Section 3 Item 4 Subtitle (fr-FR)",
+    "section3item4SubTitle.comment"              : "Item subtitle.",
+    "section3item5SubTitle"                       : "Section 3 Item 5 Subtitle (fr-FR)",
+    "section3item5SubTitle.comment"              : "Item subtitle.",
+    "section3item6SubTitle"                       : "Section 3 Item 6 Subtitle (fr-FR)",
+    "section3item6SubTitle.comment"              : "Item subtitle.",
+    "section3item7SubTitle"                       : "Section 3 Item 7 Subtitle (fr-FR)",
+    "section3item7SubTitle.comment"              : "Item subtitle.",
+
+    "section3item1Description"                       : "Description of Section 3 Item 1. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item1Description.comment"              : "Item description.",
+    "section3item2Description"                       : "Description of Section 3 Item 2. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item2Description.comment"              : "Item description.",
+    "section3item3Description"                       : "Description of Section 3 Item 3. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item3Description.comment"              : "Item description.",
+    "section3item4Description"                       : "Description of Section 3 Item 4. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item4Description.comment"              : "Item description.",
+    "section3item5Description"                       : "Description of Section 3 Item 5. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item5Description.comment"              : "Item description.",
+    "section3item6Description"                       : "Description of Section 3 Item 6. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item6Description.comment"              : "Item description.",
+    "section3item7Description"                       : "Description of Section 3 Item 7. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item7Description.comment"              : "Item description.",
+
+    "section3item1Content"                    : "Content of Section 3 Item 1. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item1Content.comment"              : "Item Content.",
+    "section3item2Content"                    : "Content of Section 3 Item 2. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item2Content.comment"              : "Item Content.",
+    "section3item3Content"                    : "Content of Section 3 Item 3. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item3Content.comment"              : "Item Content.",
+    "section3item4Content"                    : "Content of Section 3 Item 4. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item4Content.comment"              : "Item Content.",
+    "section3item5Content"                    : "Content of Section 3 Item 5. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item5Content.comment"              : "Item Content.",
+    "section3item6Content"                    : "Content of Section 3 Item 6. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item6Content.comment"              : "Item Content.",
+    "section3item7Content"                    : "Content of Section 3 Item 7. [!!!Localize your data content to fr-FR -- see \\js\\data.json!!!]",
+    "section3item7Content.comment"              : "Item Content.",
+
+   "section4item1Title"                       : "Section 4 Item 1 Title (fr-FR)",
+    "section4item1Title.comment"              : "Item title.",
+    "section4item2Title"                       : "Section 4 Item 2 Title (fr-FR)",
+    "section4item2Title.comment"              : "Item title.",
+    "section4item3Title"                       : "Section 4 Item 3 Title (fr-FR)",
+    "section4item3Title.comment"              : "Item title.",
+    "section4item4Title"                       : "Section 4 Item 4 Title (fr-FR)",
+    "section4item4Title.comment"              : "Item title.",
+    "section4item5Title"                       : "Section 4 Item 5 Title (fr-FR)",
+    "section4item5Title.comment"              : "Item title.",
+    "section4item6Title"                       : "Section 4 Item 6 Title (fr-FR)",
+    "section4item6Title.comment"              : "Item title.",
+
+    "section4item1SubTitle"                       : "Section 4 Item 1 Subtitle (fr-FR)",
+    "section4item1SubTitle.comment"              : "Item subtitle.",
+    "section4item2SubTitle"                       : "Section 4 Item 2 Subtitle (fr-FR)",
+    "section4item2SubTitle.comment"              : "Item subtitle.",
+    "section4item3SubTitle"                       : "Section 4 Item 3 Subtitle (fr-FR)",
+    "section4item3SubTitle.comment"              : "Item subtitle.",
+    "section4item4SubTitle"                       : "Section 4 Item 4 Subtitle (fr-FR)",
+    "section4item4SubTitle.comment"              : "Item subtitle.",
+    "section4item5SubTitle"                       : "Section 4 Item 5 Subtitle (fr-FR)",
+    "section4item5SubTitle.comment"              : "Item subtitle.",
+    "section4item6SubTitle"                       : "Section 4 Item 6 Subtitle (fr-FR)",
+    "section4item6SubTitle.comment"              : "Item subtitle.",
+
+    "section4item1Description"                       : "Description of Section 4 Item 1.",
+    "section4item1Description.comment"              : "Item description.",
+    "sectionitem2Description"                       : "Description of Section 4 Item 2.",
+    "section4item2Description.comment"              : "Item description.",
+    "section4item3Description"                       : "Description of Section 4 Item 3.",
+    "section4item3Description.comment"              : "Item description.",
+    "section4item4Description"                       : "Description of Section 4 Item 4.",
+    "section4item4Description.comment"              : "Item description.",
+    "section4item5Description"                       : "Description of Section 4 Item 5.",
+    "section4item5Description.comment"              : "Item description.",
+    "section4item6Description"                       : "Description of Section 4 Item 6.",
+    "section4item6Description.comment"              : "Item description.",
+
+    "section4item1Content"                    : "Content of Section 4 Item 1.",
+    "section4item1Content.comment"              : "Item Content.",
+    "section4item2Content"                    : "Content of Section 4 Item 2.",
+    "section4item2Content.comment"              : "Item Content.",
+    "section4item3Content"                    : "Content of Section 4 Item 3.",
+    "section4item3Content.comment"              : "Item Content.",
+    "section4item4Content"                    : "Content of Section 4 Item 4.",
+    "section4item4Content.comment"              : "Item Content.",
+    "section4item5Content"                    : "Content of Section 4 Item 5.",
+    "section4item5Content.comment"              : "Item Content.",
+    "section4item6Content"                    : "Content of Section 4 Item 6.",
+    "section4item6Content.comment"              : "Item Content."
+// End data resources.
+
+}

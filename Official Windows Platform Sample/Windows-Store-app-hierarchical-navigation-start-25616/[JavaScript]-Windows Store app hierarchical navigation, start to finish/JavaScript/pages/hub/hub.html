@@ -1,0 +1,134 @@
+﻿<!--
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+
+This template is intended for Windows Store apps that require a 
+hierarchical system of navigation. 
+This pattern uses a Hub navigation pattern (hub, section, and detail pages) 
+that separates content into different sections and different levels of detail.
+
+This pattern is best for apps with large content collections or 
+many distinct sections of content.
+
+The hub page is the entry page of your app where you can preview the full scope of your app. 
+It showcases one or more sections of content, each with a small sample of items associated with that section. 
+From this page, users can navigate to a section or item detail page.
+
+The Hierarchical navigation pattern (http://go.microsoft.com/fwlink/?LinkID=316374) is highlighted in 
+our App features, start to finish series (http://go.microsoft.com/fwlink/?LinkID=316376).
+
+The navigation structure for this template is based on a data source defined in /js/data.js.
+The data is displayed through a ListView control (http://go.microsoft.com/fwlink/?LinkID=317813).
+ 
+For an overview of navigation design in Windows Store apps, see http://go.microsoft.com/fwlink/?LinkID=276817.
+For an introduction to the Hub template, see http://go.microsoft.com/fwlink/?LinkID=286574.
+For an introduction to the Hub control, see http://go.microsoft.com/fwlink/?LinkId=232511.
+For an introduction to the Page Control template, see http://go.microsoft.com/fwlink/?LinkId=232511.
+For Avoiding common certification failures, see http://go.microsoft.com/fwlink/?LinkId=232506.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>hubPage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/hub/hub.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/pages/hub/hub.js"></script>
+</head>
+<body>
+    <!-- Page content -->
+    <div class="hubpage fragment">
+        <!-- Banner (title area) -->
+        <header role="banner" data-win-res="{attributes: { 'aria-label' : 'bannerAriaLabel'}}">
+            <!-- The back button checks the navigation stack and is automatically enabled or disabled. 
+                 Note that the back button is recommended instead of a nav bar in the hierarchical navigation pattern.
+                 See Navigation design for Windows Store apps (http://msdn.microsoft.com/en-us/library/windows/apps/hh761500.aspx). -->
+            <button data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <!-- For the purposes of this example, we specify a globalized image from the app's package (ms-appx). 
+                     For images included in the app package, Windows identifies the correct image through the 
+                     file structure and/or decoration to the file name. 
+                     See Globalizing your app at http://go.microsoft.com/fwlink/?LinkId=258266. -->
+                <img class="logoimage" src="ms-appx:///images/square70logo.png"/>
+                <!-- Localizable page heading (/strings/<lang spec>). -->
+                <span class="pagetitle" data-win-res="{ textContent: 'appName' }"></span>
+            </h1>
+            <div class="headlineimagearea">
+            </div>
+        </header>
+
+        <!-- These sections provide examples of content rather than content recommendations. 
+            Sections can be added and removed easily to fit the content requirements of your app. -->
+        <section class="hub" role="main" data-win-control="WinJS.UI.Hub" data-win-res="{attributes: { 'aria-label' : 'mainContentAriaLabel'}}">
+            <!-- Customize the Hub control by modifying the HubSection controls here. -->
+
+            <!-- For this example, we include a placeholder for the 'hero' image. 
+                The hero image should be relevant to the app or app state.
+                Simply, delete this element if a hero image is not required. -->
+            <div class="hero" data-win-control="WinJS.UI.HubSection">
+            </div>
+
+            <div class="section1" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'section1Title'} }">
+                <img src="/images/gray.png" width="420" height="280" />
+                <div class="subtext win-type-x-large" data-win-res="{ textContent: 'section1Subtext' }"></div>
+                <div class="win-type-small">
+                    <span data-win-res="{ textContent: 'section1Description' }"></span>
+                </div>
+            </div>
+
+            <div class="section2" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'section2Title'} }">
+                <div class="item-title win-type-medium" data-win-res="{ textContent: 'section2Item1Title' }"></div>
+                <div class="article-header win-type-x-large" data-win-res="{ textContent: 'section2Subtext' }"></div>
+                <div class="win-type-xx-small" data-win-res="{ textContent: 'section2Item1SubTitle' }"></div>
+                <div class="win-type-small">
+                    <span data-win-res="{ textContent: 'section2Description' }"></span>
+                </div>
+            </div>
+
+            <div class="section3" data-win-control="WinJS.UI.HubSection" data-win-res="{ winControl: {'header': 'section3Title'} }"
+                 data-win-options="{ onheaderinvoked: select('.pagecontrol').winControl.section3HeaderNavigate }">
+                <div class="itemTemplate" data-win-control="WinJS.Binding.Template">
+                    <img src="#" data-win-bind="src: backgroundImage; alt: title" />
+                    <div class="win-type-medium" data-win-bind="textContent: title"></div>
+                    <div class="win-type-small" data-win-bind="textContent: description"></div>
+                </div>
+                <div class="itemslist win-selectionstylefilled" data-win-control="WinJS.UI.ListView" data-win-options="{
+                        layout: {type: WinJS.UI.GridLayout},
+                        selectionMode: 'none',
+                        itemTemplate: select('.section3 .itemTemplate'),
+                        itemDataSource: select('.pagecontrol').winControl.section3DataSource,
+                        oniteminvoked: select('.pagecontrol').winControl.section3ItemNavigate
+                    }">
+                </div>
+            </div>
+
+            <div class="section4" data-win-control="WinJS.UI.HubSection" data-win-options="{ isHeaderStatic: true }" data-win-res="{ winControl: {'header': 'section4Title'} }">
+                <div class="top-image-row">
+                    <img src="/images/gray.png" />
+                </div>
+                <div class="sub-image-row">
+                    <img src="/images/gray.png" />
+                    <img src="/images/gray.png" />
+                    <img src="/images/gray.png" />
+                </div>
+                <div class="win-type-medium" data-win-res="{ textContent: 'DescriptionText' }"></div>
+                <div class="win-type-small">
+                    <span data-win-res="{ textContent: 'section4Description' }"></span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿//// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+//// ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+//// THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+//// PARTICULAR PURPOSE.
+////
+//// Copyright (c) Microsoft Corporation. All rights reserved
+
+// Resource comments should provide guidance to localizers. They should clarify 
+// the sense or context, and point out any constraints on the string. 
+// It’s not necessary to have a comment in all cases. Add comments where useful. 
+// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+
+// This non-EN-US resource file is provided for demonstration purposes only.
+
+{
+    "helpFlyoutAriaLabel"         : "Help flyout",
+
+    "settingsHelpLabel"                       : "Aider",
+    "settingsHelpLabel.comment"              : "Text for Help button in Settings.",
+
+    "settingsHelpContent"                       : "<p>[!!!Localize your help content to fr-FR -- see remarks for this item in en-US\\help.resjson!!!]</p>",
+    "settingsHelpContent.comment"              : "HTML content of Help in Settings."
+}
