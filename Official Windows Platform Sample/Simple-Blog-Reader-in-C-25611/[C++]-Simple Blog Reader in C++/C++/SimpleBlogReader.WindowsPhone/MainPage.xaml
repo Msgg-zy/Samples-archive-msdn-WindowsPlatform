@@ -1,0 +1,114 @@
+﻿<Page
+    x:Class="SimpleBlogReader.MainPage"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimpleBlogReader"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <!-- Collection of items displayed by this page -->
+        <CollectionViewSource
+        x:Name="itemsViewSource"
+        Source="{Binding Items}"/>
+    </Page.Resources>
+    <Page.BottomAppBar>
+
+        <CommandBar x:Name="cmdBar" Padding="10,0,10,0">
+
+            <AppBarButton x:Name="addButton" Height="95" Margin="20,0,20,0"
+                          HorizontalAlignment="Right"
+                          Icon="Add"
+                          >
+                <Button.Flyout>
+                    <Flyout Placement="Top">
+                        <Grid Background="Black">
+                            <StackPanel>
+                                <TextBox x:Name="tbNewFeed" Width="400"/>
+                                <Button Click="AddFeed_Click">Add feed</Button>
+                            </StackPanel>
+                        </Grid>
+                    </Flyout>
+                </Button.Flyout>
+
+            </AppBarButton>
+            <AppBarButton x:Name="removeButton" Height="95" Margin="20,0,20,0"
+                          HorizontalAlignment="Right"
+                          Icon="Remove"
+                          Click="removeFeed_Click"/>
+
+
+            <!--These buttons appear when the user clicks the remove button to 
+            signal that they want to remove a feed. Delete removes the feed(s)  
+            and returns to the normal visual state. Cancel just returns to the normal state. -->
+            <AppBarButton x:Name="deleteButton" Height="95" Margin="20,0,20,0"
+                          HorizontalAlignment="Right"
+                          Visibility="Collapsed"
+                          Icon="Delete" Click="deleteButton_Click"/>
+
+
+            <AppBarButton x:Name="cancelButton" Height="95" Margin="20,0,20,0"
+                          HorizontalAlignment="Right"
+                          Visibility="Collapsed"
+                          Icon="Cancel"
+                          Click="cancelButton_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Grid Margin="10, 50, 10, 10">
+       
+        <!-- Vertical scrolling item list -->
+    <ListView
+        x:Name="ItemListView"           
+        AutomationProperties.AutomationId="ItemListView"
+        AutomationProperties.Name="Items"
+        TabIndex="1" 
+        IsItemClickEnabled="True"
+        ItemsSource="{Binding Source={StaticResource itemsViewSource}}"
+        IsSwipeEnabled="False"
+        ItemClick="ItemListView_ItemClick"
+        SelectionMode="Single"
+        ItemTemplate="{StaticResource ListItemTemplate}">
+
+        <ListView.ItemContainerStyle>
+            <Style TargetType="FrameworkElement">
+                <Setter Property="Margin" Value="2,0,0,2"/>
+            </Style>
+        </ListView.ItemContainerStyle>
+    </ListView>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="SelectionStates">
+                <VisualState x:Name="Normal"/>
+                <VisualState x:Name="Checkboxes">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ItemListView" 
+                                                       Storyboard.TargetProperty="SelectionMode">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Multiple"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ItemListView" 
+                                                       Storyboard.TargetProperty="IsItemClickEnabled">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="False"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="removeButton" 
+                                                       Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="addButton" 
+                                                       Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="deleteButton" 
+                                                       Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="cancelButton" 
+                                                       Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                        </ObjectAnimationUsingKeyFrames>-->
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</Page>
