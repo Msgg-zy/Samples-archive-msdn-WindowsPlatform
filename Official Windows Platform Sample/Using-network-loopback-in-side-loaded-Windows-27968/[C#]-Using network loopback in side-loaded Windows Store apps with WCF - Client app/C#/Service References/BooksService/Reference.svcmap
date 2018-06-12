@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1a3d44ea-d96e-45ae-b081-54b9023245c5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:8888/BooksService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="0253da1f-6e2c-4fe0-8703-c8b55ec0687b" SourceId="1" SourceUrl="net.tcp://localhost:8888/BooksService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="c6901cf6-5e87-4e7b-be5d-0f7831a97155" SourceId="1" SourceUrl="net.tcp://localhost:8888/BooksService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="7ecff826-b757-4d03-8e9e-ddb0e40dcb68" SourceId="1" SourceUrl="net.tcp://localhost:8888/BooksService/mex" />
+    <MetadataFile FileName="WcfServiceHost.xsd" MetadataType="Schema" ID="fc0f953e-b9ab-4141-a3e0-4a3e0fec7301" SourceId="1" SourceUrl="net.tcp://localhost:8888/BooksService/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="6f2817db-3eb2-4b4d-ae37-54c375e32b2f" SourceId="1" SourceUrl="net.tcp://localhost:8888/BooksService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
