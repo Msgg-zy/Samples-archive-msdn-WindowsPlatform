@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="83a6b5d4-9bc4-4b18-9064-5b9948c8d906" Version="1.0.0.0" Publisher="CN=Microsoft" />
+  <Properties>
+    <DisplayName>Building Efficient Apps</DisplayName>
+    <PublisherDisplayName>Microsoft</PublisherDisplayName>
+    <Logo>images\windows_content_storeLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <m2:VisualElements DisplayName="Building Efficient Apps" Description="An app that demonstrates how to build efficient Windows Store apps using the features in WinJS 2.0." ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images/windows_content_squareTile.png" Square30x30Logo="images\windows_content_smallTile.png">
+        <m2:DefaultTile DefaultSize="wide310x150Logo" Wide310x150Logo="images/windows_content_tile.png">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="wide310x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="images\windows_content_splash.png" BackgroundColor="#7EBA00" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

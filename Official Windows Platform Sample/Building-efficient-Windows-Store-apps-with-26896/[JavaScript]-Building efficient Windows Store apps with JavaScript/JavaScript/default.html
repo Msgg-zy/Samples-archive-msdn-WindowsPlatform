@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BuildingEfficientApps</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- BuildingEfficientApps references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+    <script src="js/searchLOC.js"></script>
+    <script src="js/SearchLOCControl.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/LOC-worker.js"></script>
+    <script src="js/jquery-2.0.3.js"></script>
+</head>
+<body>
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/home/home.html'}"></div>
+    <!-- The global navigation bar for the app. -->
+    <div id="navBar" data-win-control="WinJS.UI.NavBar">
+        <div id="navContainer" data-win-control="WinJS.UI.NavBarContainer">
+            <div id="homeNav" data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-options="{
+                     location: '/pages/home/home.html',
+                     icon: 'home',
+                     label: 'Home page'
+               }">
+            </div>
+            <div id="handlingErrors"
+                 data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-options="{
+                        location: '/pages/handlingErrors/handlingErrors.html',
+                        icon: 'help',
+                        label: 'Handling errors'
+                  }">
+            </div>
+            <div id="chainedAsync"
+                 data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-options="{
+                    location: '/pages/chainedAsync/chainedAsync.html',
+                    icon: 'link',
+                    label: 'Errors in chained async calls'
+              }">
+            </div>
+            <div id="dispose"
+                 data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-options="{
+                    location: '/pages/dispose/dispose.html',
+                    icon: 'delete',
+                    label: 'Dispose pattern'
+              }">
+            </div>
+            <div id="scheduler"
+                 data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-options="{
+                    location: '/pages/scheduler/scheduler.html',
+                    icon: 'clock',
+                    label: 'Scheduler API'
+              }">
+            </div>
+            <div id="worker"
+                 data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-options="{
+                    location: '/pages/worker/worker.html',
+                    icon: 'repair',
+                    label: 'Web Worker API'
+              }">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
