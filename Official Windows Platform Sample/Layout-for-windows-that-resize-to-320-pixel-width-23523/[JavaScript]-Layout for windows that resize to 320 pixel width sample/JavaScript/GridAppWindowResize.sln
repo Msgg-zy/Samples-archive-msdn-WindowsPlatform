@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows
+VisualStudioVersion = 12.0.20617.1 PREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "GridAppWindowResize", "GridAppWindowResize\GridAppWindowResize.jsproj", "{905E9D32-E3FB-4FA7-9272-572B2A140BCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Debug|ARM.ActiveCfg = Debug|ARM
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Debug|ARM.Build.0 = Debug|ARM
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Debug|ARM.Deploy.0 = Debug|ARM
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Debug|x64.ActiveCfg = Debug|x64
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Debug|x64.Build.0 = Debug|x64
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Debug|x64.Deploy.0 = Debug|x64
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Debug|x86.ActiveCfg = Debug|x86
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Debug|x86.Build.0 = Debug|x86
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Debug|x86.Deploy.0 = Debug|x86
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Release|ARM.ActiveCfg = Release|ARM
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Release|ARM.Build.0 = Release|ARM
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Release|ARM.Deploy.0 = Release|ARM
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Release|x64.ActiveCfg = Release|x64
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Release|x64.Build.0 = Release|x64
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Release|x64.Deploy.0 = Release|x64
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Release|x86.ActiveCfg = Release|x86
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Release|x86.Build.0 = Release|x86
+		{905E9D32-E3FB-4FA7-9272-572B2A140BCE}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
