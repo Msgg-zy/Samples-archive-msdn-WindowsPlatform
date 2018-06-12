@@ -1,0 +1,111 @@
+﻿<!--
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>mediaPlayer</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    <link href="mediaPlayer.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--style="height: 100%; display: -ms-grid; -ms-grid-columns: 1fr auto 1fr; -ms-grid-rows: 1fr auto 1fr; overflow: auto; -ms-content-zooming: zoom;"-->
+    <!-- Media -->
+    <div id="mediaContainer">
+        <video id="mediaVideo" msAudioCategory="BackgroundCapableMedia" controls />     
+    </div>
+   
+    <!-- Top AppBar -->
+    <div id="appBarTop"
+         data-win-control="WinJS.UI.AppBar"
+         data-win-options="{layout:'custom', placement:'top'}">
+
+        <label id="sourceLabel" data-win-res="{textContent: 'sourceLabelText'}"></label>
+        <input id="txtSourceInput" type="text" width="200" />
+
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarBrowseLabel',tooltip:'appbarBrowseTooltip'}}"
+                data-win-options="{id:'browseButton', icon:'openlocal', section:'global', type: 'button'}"></button>
+
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarHelpLabel',tooltip:'appbarHelpTooltip'}}"
+                data-win-options="{id:'helpButton', icon:'help', section:'global', type: 'button'}"
+                style="float:right"></button>
+    </div>
+
+    <!-- Bottom AppBar -->
+    <div id="appBarBottom" data-win-control="WinJS.UI.AppBar" data-win-options="{placement:'bottom'}" >
+
+        <!-- Other playback conrols.  Rewind, FastForward, Previous, Next -->
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarRewindLabel',tooltip:'appbarRewindTooltip'}}"
+                data-win-options="{id:'rewindButton', icon:'back', section:'global', type: 'button'}"></button>
+
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarFastForwardLabel',tooltip:'appbarFastForwardTooltip'}}"
+                data-win-options="{id:'fastForwardButton', icon:'forward', section:'global', type: 'button'}"></button>
+
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarPreviousLabel',tooltip:'appbarPreviousTooltip'}}"
+                data-win-options="{id:'previousButton', icon:'previous', section:'global', type: 'button'}"></button>
+
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarNextLabel',tooltip:'appbarNextTooltip'}}"
+                data-win-options="{id:'nextButton', icon:'next', section:'global', type: 'button'}"></button>
+
+        <!-- Basic playback controls.  Play, Pause -->
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarPlayLabel',tooltip:'appbarPlayTooltip'}}"
+                data-win-options="{id:'playButton', icon:'play', section:'global', type: 'button'}"></button>
+
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarPauseLabel',tooltip:'appbarPauseTooltip'}}"
+                data-win-options="{id:'pauseButton', icon:'pause', section:'global', type: 'button'}"></button>
+
+        <!-- zoom, fullScreen, repeat, audioTracks, mute, volume -->
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarZoomLabel',tooltip:'appbarZoomTooltip'}}"
+                data-win-options="{id:'zoomButton', icon:'zoomin', section:'global', type: 'button'}"></button>
+
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarFullScreenLabel',tooltip:'appbarFullScreenTooltip'}}"
+                data-win-options="{id:'fullScreenButton', icon:'fullscreen', section:'global', type: 'button'}"></button>
+
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarRepeatLabel',tooltip:'appbarRepeatToolTip'}}"
+                data-win-options="{id:'repeatButton', icon:'repeatall', section:'global', type: 'toggle'}"></button>
+
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarAudioTracksLabel',tooltip:'appbarAudioTracksToolTip'}}"
+                data-win-options="{id:'audioTracksButton', icon:'audio', section:'global', type: 'flyout', flyout:'audioTracksFlyout'}"></button>
+
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarMuteLabel',tooltip:'appbarMuteToolTip'}}"
+                data-win-options="{id:'muteButton', icon:'mute', section:'global', type: 'toggle'}"></button>
+
+        <button data-win-control="WinJS.UI.AppBarCommand"
+                data-win-res="{winControl: {label:'appbarVolumeLabel',tooltip:'appbarVolumeToolTip'}}"
+                data-win-options="{id:'volumeButton', icon:'volume', section:'global', type: 'flyout', flyout:'volumeFlyout'}"></button>
+    </div>
+
+    <!--Bottom Appbar Flyouts-->
+    <div id="volumeFlyout" data-win-control="WinJS.UI.Flyout" aria-label="{Volume}">
+        <input id="volumeInputRange" data-win-bind="value: volume" type="range" min="0" max="1" step=".1"  />
+    </div>
+
+    <div id="audioTracksFlyout" data-win-control="WinJS.UI.Flyout" aria-label="{Audio Tracks}">
+        <select id="audioTracksSelect" />
+    </div>
+
+</body>
+</html>

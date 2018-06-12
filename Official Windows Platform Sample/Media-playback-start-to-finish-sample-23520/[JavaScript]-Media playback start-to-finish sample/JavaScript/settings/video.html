@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Video</title>
+    <script src="/settings/video.js"></script>
+</head>
+<body>
+    <!-- Each settings flyout should be defined in its own HTML file. -->
+    <!-- Width can be 'narrow' or 'wide'. -->
+    <!-- Set the background color for the header to the background color defined
+            for your app tile in the manifest. -->
+    <div id="videoDiv" data-win-control="WinJS.UI.SettingsFlyout" data-win-res="{attributes: { 'aria-label' : '/video/videoFlyoutAriaLabel'}}" data-win-options="{settingsCommandId:'video', width:'narrow'}">
+        <div class="win-ui-dark win-header" style="background-color:#00b2f0">
+            <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+            <div class="win-label" data-win-res="{textContent: '/video/settingsVideoLabel'}"></div>
+            <img src="ms-appx:///images/smalllogo.png" style="position: absolute; right: 40px;" />
+        </div>
+        <div class="win-content" id="videocontent">
+        </div>
+    </div>
+</body>
+</html>

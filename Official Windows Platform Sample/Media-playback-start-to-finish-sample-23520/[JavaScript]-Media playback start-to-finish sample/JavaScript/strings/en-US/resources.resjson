@@ -1,0 +1,140 @@
+﻿// Resource comments should provide guidance to localizers. They should clarify 
+// the sense or context, and point out any constraints on the string. 
+// It’s not necessary to have a comment in all cases. Add comments where useful. 
+// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836.
+
+{
+// App manifest resources.
+    // All values of the token string created for the DisplayName element in the package manifest must match 
+    // the names that you’ve reserved for the app at the Windows Store. Otherwise, a validation error will occur 
+    // when you upload the package to the Store.
+    "displayName"                       : "Media playback, start to finish",
+    "_displayName.comment"              : "App display name",
+
+    "description"                       : "Media playback, start to finish (JavaScript).",
+    "_description.comment"              : "App description",
+
+    "shortName"                         : "Media",
+    "_shortName.comment"                : "Must be less than 13 characters and should be an abbreviation for the displayName",
+// End app manifest resources.
+
+// UI resources
+    "appName"              : "Media playback, start to finish",
+    "_appName.comment"     : "App name displayed on opening page.",
+
+    "greeting"              : "Hello",
+    "_greeting.comment"     : "A welcome greeting.",
+
+    "disclaimer"              : "THIS CODE AND INFORMATION IS PROVIDED 'AS IS' WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.\n\nCopyright (c) Microsoft Corporation. All rights reserved",
+    "_disclaimer.comment"     : "Body text for usage disclaimer message box.",
+
+    "disclaimerTitle"              : "Disclaimer",
+    "_disclaimerTitle.comment"     : "Title for usage disclaimer message box.",
+
+    "disclaimerButton"              : "Accept",
+    "_disclaimerButton.comment"     : "Text for usage disclaimer message box button.",
+
+    "appbarHelpLabel"              : "Help",
+    "_appbarHelpLabel.comment"     : "Text for Help button on AppBar.",
+
+    "appbarHelpTooltip"              : "Show help for this app",
+    "_appbarHelpTooltip.comment"     : "Tooltip text for Help button on AppBar.",
+
+    "appbarRewindLabel"              : "Rewind",
+    "_appbarRewindLabel.comment"     : "Text for rewind button on AppBar.",
+
+    "appbarRewindTooltip"              : "Rewind the media",
+    "_appbarRewindTooltip.comment"     : "Tooltip text for rewind button on AppBar.",
+
+    "appbarFastForwardLabel"              : "Fast Forward",
+    "_appbarFastForwardLabel.comment"     : "Text for FastForward button on AppBar.",
+
+    "appbarFastForwardTooltip"              : "Fast forward the media",
+    "_appbarFastForwardTooltip.comment"     : "Tooltip text for FastForward button on AppBar.",
+
+    "appbarPreviousLabel"              : "Previous",
+    "_appbarPreviousLabel.comment"     : "Text for Previous button on AppBar.",
+
+    "appbarPreviousTooltip"              : "Skip back 5 seconds in the media",
+    "_appbarPreviousTooltip.comment"     : "Tooltip text for Previous button on AppBar.",
+
+    "appbarNextLabel"              : "Next",
+    "_appbarNextLabel.comment"     : "Text for Next button on AppBar.",
+
+    "appbarNextTooltip"              : "Skip forward 5 seconds in the media.",
+    "_appbarNextTooltip.comment"     : "Tooltip text for Help button on AppBar.",
+
+    "appbarPlayLabel"              : "Play",
+    "_appbarPlayLabel.comment"     : "Text for Play button on AppBar.",
+
+    "appbarPlayTooltip"              : "Play the media.",
+    "_appbarPlayTooltip.comment"     : "Tooltip text for Play button on AppBar.",
+
+    "appbarStopLabel"              : "Stop",
+    "_appbarStopLabel.comment"     : "Text for Stop button on AppBar.",
+
+    "appbarStopTooltip"              : "Stops the media.",
+    "_appbarStopTooltip.comment"     : "Tooltip text for Stop button on AppBar.",
+
+    "appbarPauseLabel"              : "Pause",
+    "_appbarPauseLabel.comment"     : "Text for Pause button on AppBar.",
+
+    "appbarPauseTooltip"              : "Pauses the media.",
+    "_appbarPauseTooltip.comment"     : "Tooltip text for Pause button on AppBar.",
+    
+        "appbarPictureSizeLabel"              : "Picture",
+    "_appbarPictureSizeLabel.comment"     : "Text for PictureSize button on AppBar.",
+
+    "appbarPictureSizeTooltip"              : "Changes the picture size of the media.",
+    "_appbarPictureSizeTooltip.comment"     : "Tooltip text for PictureSize button on AppBar.",
+
+    "appbarZoomLabel"              : "Zoom",
+    "_appbarZoomLabel.comment"     : "Text for Zoom button on AppBar.",
+
+    "appbarZoomTooltip"              : "Zooms the media.",
+    "_appbarZoomTooltip.comment"     : "Tooltip text for Pause button on AppBar.",
+
+    "appbarFullScreenLabel"              : "FullScreen",
+    "_appbarFullScreenLabel.comment"     : "Text for FullScreen button on AppBar.",
+
+    "appbarFullScreenTooltip"              : "Sets the media to full screen mode.",
+    "_appbarFullScreenTooltip.comment"     : "Tooltip text for FullScreen button on AppBar.",
+
+     "appbarMuteLabel"              : "Mute",
+    "_appbarMuteLabel.comment"     : "Text for Mute button on AppBar.",
+
+    "appbarMuteTooltip"              : "Mutes and unmutes the audio..",
+    "_appbarMuteTooltip.comment"     : "Tooltip text for Mute button on AppBar.",
+
+    "appbarRepeatLabel"              : "Repeat",
+    "_appbarRepeatLabel.comment"     : "Text for Repeat button on AppBar.",
+
+    "appbarRepeatTooltip"              : "Repeats and unmutes the audio.",
+    "_appbarRepeatTooltip.comment"     : "Tooltip text for Repeat button on AppBar.",
+
+    "appbarVolumeLabel"              : "Volume",
+    "_appbarVolumeLabel.comment"     : "Text for Volume button on AppBar.",
+
+    "appbarVolumeTooltip"              : "Changes the volume of the audio.",
+    "_appbarVolumeTooltip.comment"     : "Tooltip text for Repeat button on AppBar.",
+
+    "appbarAudioTracksLabel"              : "Audio Tracks",
+    "_appbarAudioTracksLabel.comment"     : "Text for Audio Tracks button on AppBar.",
+
+    "appbarAudioTracksTooltip"              : "Selects the audio tracks of the video.",
+    "_appbarAudioTracksTooltip.comment"     : "Tooltip text for Audio Track button on AppBar.",
+
+    "bannerAriaLabel"              : "Banner content",
+    "mainContentAriaLabel"         : "Main content",
+    "sectionContentAriaLabel"         : "List of this section's items",
+
+    "appbarBrowseLabel"         : "Browse",
+    "_appbarBrowseLabel.comment" : "Text for Browse button on AppBar.",
+
+    "appbarBrowseTooltip" : "Browse", 
+    "_appbarBrowseTooltip.comment" : "Text for Browse button on AppBar.",
+
+    "sourceLabelText": "Source ",
+    "_sourceLabelText.comment": "Text for the Source label."
+// End UI resources.
+}

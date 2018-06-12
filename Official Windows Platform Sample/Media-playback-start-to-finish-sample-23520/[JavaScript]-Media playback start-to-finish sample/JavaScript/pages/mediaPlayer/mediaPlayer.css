@@ -1,0 +1,30 @@
+﻿.mediaPlayer section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#mediaContainer {
+    height: 100%; 
+    display: -ms-grid; 
+    -ms-grid-columns: 1fr auto 1fr; 
+    -ms-grid-rows: 1fr auto 1fr; 
+    overflow: auto; 
+    -ms-content-zooming: zoom;
+}
+
+#mediaVideo {
+    -ms-grid-column: 2; 
+    -ms-grid-row: 2;
+}
+
+#appBarBottom {
+    text-align: center;
+}
+
+#volumeInputRange {
+    -ms-transform: rotate(270deg); 
+    height:10px; 
+    width: 80px; 
+    margin:5px;
+    text-align: center;
+}

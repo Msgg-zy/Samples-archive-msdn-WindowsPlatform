@@ -1,0 +1,13 @@
+﻿// Resource comments should provide guidance to localizers. They should clarify 
+// the sense or context, and point out any constraints on the string. 
+// It’s not necessary to have a comment in all cases. Add comments where useful. 
+// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+{
+     "videoFlyoutAriaLabel"         : "Audio flyout",
+
+    "settingsVideoLabel"                       : "Video",
+    "settingsVideoLabel.comment"              : "Text for Video button in Settings.",
+
+    "settingsVideoContent"                       : "<p style='color:GrayText'>Add video specific settings here.</p>",
+    "settingsVideoContent.comment"              : "HTML content of Video in Settings."
+}

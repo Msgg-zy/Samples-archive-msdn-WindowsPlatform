@@ -1,0 +1,85 @@
+﻿<!--
+//*********************************************************
+//
+// Copyright (c) Microsoft. All rights reserved.
+//
+//*********************************************************
+-->
+<SettingsFlyout
+    x:Class="MediaPlaybackStartToFinish.PrivacySettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MediaPlaybackStartToFinish"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    IconSource="Assets/SmallLogo.png"
+    Title="Privacy"
+    d:DesignWidth="346"
+    HeaderBackground="#00b2f0">
+    <SettingsFlyout.Resources>
+        <Style x:Key="SettingsFlyoutSectionStyle" TargetType="StackPanel">
+            <Setter Property="Margin" Value="0,0,0,39"/>
+        </Style>
+        <Style x:Key="SettingsFlyoutSectionHeaderTextStyle" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="11"/>
+        </Style>
+
+        <Style x:Key="SettingsFlyoutSectionTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="Margin" Value="0,0,0,25"/>
+        </Style>
+    </SettingsFlyout.Resources>
+
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+        <Grid Background="White">
+            <RichTextBlock FontSize="16" Foreground="Black">
+
+                <Paragraph>
+                    <Bold>Privacy policy</Bold>
+                </Paragraph>
+
+                <Paragraph/>
+
+                <Paragraph>
+                    If your app enables access to, and the use of, any Internet-based services, 
+        or otherwise collects or transmits any user’s personal information, you must 
+        maintain a privacy policy. You are responsible for informing customers of 
+        your privacy policy (including by submitting that policy to us for display to customers). 
+        Your privacy policy must (i) comply with applicable laws and regulations, (ii) inform 
+        users of the information collected by your app and how that information is used, stored, 
+        secured and disclosed, and (iii) describe the controls that users have over the use and 
+        sharing of their information, and how they may access their information. You must also 
+        provide access to your privacy policy in the app’s settings as displayed in the Windows settings charm.
+                </Paragraph>
+
+                <Paragraph/>
+
+                <Paragraph>
+                    Microsoft doesn't provide a default privacy policy for your app. 
+          Likewise, your app is not covered by any Microsoft privacy policy. 
+          If your app requires a privacy policy, you must provide one. 
+          Review the:
+                </Paragraph>
+
+                <Paragraph>
+                    <InlineUIContainer>
+                        <HyperlinkButton NavigateUri="http://go.microsoft.com/fwlink/?LinkId=244031">
+                            App Developer Agreement
+                        </HyperlinkButton>
+                    </InlineUIContainer>
+                </Paragraph>
+
+                <Paragraph>
+                    <InlineUIContainer>
+                        <HyperlinkButton NavigateUri="http://go.microsoft.com/fwlink/?LinkId=221802">
+                            <TextBlock TextWrapping="Wrap" Text="Windows 8 app certification requirements"/>
+                        </HyperlinkButton>
+                    </InlineUIContainer>
+                </Paragraph>
+
+            </RichTextBlock>
+        </Grid>
+    </StackPanel>
+</SettingsFlyout>

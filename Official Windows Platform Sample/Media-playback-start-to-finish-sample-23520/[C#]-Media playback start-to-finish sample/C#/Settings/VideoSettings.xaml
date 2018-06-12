@@ -1,0 +1,58 @@
+﻿<!--
+//*********************************************************
+//
+// Copyright (c) Microsoft. All rights reserved.
+//
+//*********************************************************
+-->
+<SettingsFlyout
+    x:Class="MediaPlaybackStartToFinish.VideoSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MediaPlaybackStartToFinish"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    IconSource="Assets/SmallLogo.png"
+    Title="Video"
+    HeaderBackground="#00b2f0"
+    d:DesignWidth="346">
+    <SettingsFlyout.Resources>
+        <Style x:Key="SettingsFlyoutSectionStyle" TargetType="StackPanel">
+            <Setter Property="Margin" Value="0,0,0,39"/>
+        </Style>
+        <Style x:Key="SettingsFlyoutSectionHeaderTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Foreground" Value="Gray"/>
+        </Style>
+
+        <Style x:Key="SettingsFlyoutSectionTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="0,0,0,25"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+    </SettingsFlyout.Resources>
+
+    <!-- This StackPanel acts as a root panel for vertical layout of the content sections -->
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+
+        <!-- The StackPanel(s) below define individual content sections -->
+
+        <!-- Content Section 1-->
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <!-- Section 1 header -->
+            <TextBlock Style="{StaticResource SettingsFlyoutSectionHeaderTextStyle}" 
+                       Text="Add video specific settings here" Padding="0,0,0,20" />
+
+            <!-- Section 1 body -->
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,0,0,25" TextWrapping="Wrap">
+
+            </TextBlock>
+
+        </StackPanel>
+
+        <!-- Define more Content Sections below as necessary -->
+
+    </StackPanel>
+</SettingsFlyout>

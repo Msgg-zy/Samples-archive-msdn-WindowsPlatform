@@ -1,0 +1,53 @@
+﻿<!--
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+
+This template is intended for Windows Store apps that require a 
+hierarchical system of navigation. 
+This pattern uses a Hub navigation pattern (hub, section, and detail pages) 
+that separates content into different sections and different levels of detail.
+
+This pattern is best for apps with large content collections or 
+many distinct sections of content.
+
+The Hierarchical navigation pattern (http://go.microsoft.com/fwlink/?LinkID=316374) is highlighted in 
+our App features, start to finish series (http://go.microsoft.com/fwlink/?LinkID=316376).
+
+The navigation structure for this template is based on a data source defined in /js/data.js.
+The data is displayed through a ListView control (http://go.microsoft.com/fwlink/?LinkID=317813).
+ 
+For an overview of navigation design in Windows Store apps, see http://go.microsoft.com/fwlink/?LinkID=276817.
+For an introduction to the Hub template, see http://go.microsoft.com/fwlink/?LinkID=286574.
+For an introduction to the Hub control, see http://go.microsoft.com/fwlink/?LinkId=232511.
+For an introduction to the Page Control template, see http://go.microsoft.com/fwlink/?LinkId=232511.
+For Avoiding common certification failures, see http://go.microsoft.com/fwlink/?LinkId=232506.
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Media playback, start to finish</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- HierarchicalNavTemplate references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/js/navigator.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/pages/mediaPlayer/mediaPlayer.js"></script>
+</head>
+<body>
+    <!-- Load the media player page -->
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/mediaPlayer/mediaPlayer.html'}"></div>
+</body>
+</html>
