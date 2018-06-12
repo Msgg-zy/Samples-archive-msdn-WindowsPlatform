@@ -1,0 +1,65 @@
+﻿<!--
+//*********************************************************
+//
+// Copyright (c) Microsoft. All rights reserved.
+// THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
+// ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
+// IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR
+// PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+//
+//*********************************************************
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>File Handling sample</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- FileHandling references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+</head>
+<body>
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/FileAccessBasicsPage/FileAccessBasicsPage.html'}"></div>
+    <div id="navBar" data-win-control="WinJS.UI.NavBar">
+        <div id="globalNav" data-win-control="WinJS.UI.NavBarContainer">
+            <div data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-res="{winControl: {label:'fileAccessBasicsPageNavbarLabel',tooltip:'fileAccessBasicsPageNavbarTooltip'}}"
+                 data-win-options="{
+                id:'FileAccessBasicsPageButton',
+                icon: WinJS.UI.AppBarIcon.page,
+                location: '/pages/FileAccessBasicsPage/FileAccessBasicsPage.html',
+                splitButton: false
+                }">
+            </div>
+            <div data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-res="{winControl: {label:'filePickerPageNavbarLabel',tooltip:'filePickerPageNavbarTooltip'}}"
+                 data-win-options="{
+                id:'filePickerPageButton',
+                icon: WinJS.UI.AppBarIcon.page,
+                location: '/pages/FilePickerPage/FilePickerPage.html',
+                splitButton: false
+                }">
+            </div>
+            <div data-win-control="WinJS.UI.NavBarCommand"
+                 data-win-res="{winControl: {label:'oneDriveFilesPageNavbarLabel',tooltip:'oneDriveFilesPageNavbarTooltip'}}"
+                 data-win-options="{
+                id:'oneDriveFilesPageButton',
+                icon: WinJS.UI.AppBarIcon.page,
+                location: '/pages/OneDriveFilesPage/OneDriveFilesPage.html',
+                splitButton: false
+                }">
+            </div>
+        </div>
+    </div>
+    <!-- <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmd', label:'Command', icon:'placeholder'}" type="button"></button>
+    </div> -->
+</body>
+</html>

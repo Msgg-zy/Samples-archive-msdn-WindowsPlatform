@@ -1,0 +1,65 @@
+﻿<!--
+//*********************************************************
+//
+// Copyright (c) Microsoft. All rights reserved.
+// THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
+// ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
+// IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR
+// PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+//
+//*********************************************************
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FilePicker Page (page 2 of 3)</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/FilePickerPage/FilePickerPage.css" rel="stylesheet" />
+    <script src="/pages/FilePickerPage/FilePickerPage.js"></script>
+</head>
+<body>
+    <!-- Page content -->
+    <div class="page FilePickerPage" id="output">
+        <!-- Banner (title area) -->
+        <header role="banner" data-win-res="{attributes: { 'aria-label' : 'bannerAriaLabel'}}">
+            <!-- Localizable page heading (/strings/<lang spec>). -->
+            <h1 class="headlinetextarea win-type-ellipsis" data-win-res="{textContent: 'FilePickerPageHeadline'}"></h1>
+        </header>
+        <!--  -->
+        <section role="main" data-win-res="{attributes: { 'aria-label' : 'mainContentAriaLabel'}}">
+            <h2>Sample Description</h2>
+            <p>
+                Pickers display a list of files or folders from which a user can select one or more items for further processing.
+                This page illustrates several ways to use the various pickers: selecting a single file, selecting multiple files, and selecting a folder.
+            </p>
+            <h2>Sample Instructions</h2>
+            <p>
+                Click the button associated with the part of the sample you wish to run:
+                <ul>
+                    <li>Select a single file - Displays a FileOpenPicker allowing the selection of a single file.</li>
+                    <li>Select multiple files - Displays a FileOpenPicker allowing the selection of multiple files.</li>
+                    <li>Select a folder - Displays a FolderPicker allowing the selection of a single folder.</li>
+                </ul>
+            </p>
+            <p>
+                <table cellpadding="15">
+                    <tr>
+                        <td><input id="SelectSingleFile" type="button" value="Select a single file" /></td>
+                        <td><input id="SelectMultipleFiles" type="button" value="Select multiple files" /></td>
+                        <td><input id="SelectFolder" type="button" value="Select folder" /></td>
+                    </tr>
+                </table>
+            </p>
+            <h2>Output</h2>
+            <p id="Output"></p>
+        </section>
+    </div>
+</body>
+</html>

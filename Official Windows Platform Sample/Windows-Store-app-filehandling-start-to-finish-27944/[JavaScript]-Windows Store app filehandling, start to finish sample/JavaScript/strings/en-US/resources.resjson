@@ -1,0 +1,33 @@
+﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+
+{
+    "greeting"              : "Hello World!",
+    "_greeting.comment"     : "This is a comment to the localizer",
+
+    "fileAccessBasicsPageNavbarLabel"              : "File Access Basics",
+    "_fileAccessBasicsPageNavbarLabel.comment"     : "Text for File Access Basics Page button.",
+
+    "fileAccessBasicsPageNavbarTooltip"              : "Go to File Access Basics page",
+    "_fileAccessBasicsPageNavbarTooltip.comment"     : "Tooltip text for File Access Basics Page button on NavBar.",
+
+    "filePickerPageNavbarLabel"              : "FilePicker",
+    "_filePickerPageNavbarLabel.comment"     : "Text for FilePicker button on NavBar.",
+
+    "filePickerPageNavbarTooltip"              : "Go to File Picker page",
+    "_filePickerPageNavbarTooltip.comment"     : "Tooltip text for FilePicker button on NavBar.",
+
+    "oneDriveFilesPageNavbarLabel"              : "OneDrive Files",
+    "_oneDriveFilesPageNavbarLabel.comment"     : "Text for OneDrive Files button on NavBar.",
+
+    "oneDriveFilesPageNavbarTooltip"              : "Go to OneDrive Files page",
+    "_oneDriveFilesPageNavbarTooltip.comment"     : "Tooltip text for OneDrive Files button on NavBar.",
+
+    "FileAccessBasicsPageHeadline"              : "File Access Basics (page 1 of 3)",
+    "_homePageHeadline.comment"     : "Headline or title for the FileAccessBasics page content.",
+
+    "FilePickerPageHeadline"              : "FilePicker (page 2 of 3)",
+    "_secondPageTitle.comment"     : "Headline or title for the FilePicker content.",
+
+    "OneDriveFilesPageHeadline"              : "OneDrive Files (page 3 of 3)",
+    "_OneDriveFilesPageHeadline.comment"     : "Headline or title for the OneDrive Files content."
+}

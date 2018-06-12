@@ -1,0 +1,68 @@
+﻿<!--
+//*********************************************************
+//
+// Copyright (c) Microsoft. All rights reserved.
+// THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
+// ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
+// IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR
+// PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+//
+//*********************************************************
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>File Access Basics (page 1 of 3)</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/FileAccessBasicsPage/FileAccessBasicsPage.css" rel="stylesheet" />
+    <script src="/pages/FileAccessBasicsPage/FileAccessBasicsPage.js"></script>
+</head>
+<body>
+    <!-- Page content -->
+    <div class="page FileAccessBasicsPage" id="output">
+        <!-- Banner (title area) -->
+        <header role="banner" data-win-res="{attributes: { 'aria-label' : 'bannerAriaLabel'}}">
+            <!-- Localizable page heading (/strings/<lang spec>). -->
+            <h1 class="headlinetextarea win-type-ellipsis" data-win-res="{textContent: 'FileAccessBasicsPageHeadline'}"></h1>
+        </header>
+        <!--  -->
+        <section role="main" data-win-res="{attributes: { 'aria-label' : 'mainContentAriaLabel'}}">
+            <h2>Sample Description</h2>
+            <p>
+                This page illustrates several key file-access features: programmatically accessing files (such as to enumerate a folder), getting a file's
+                properties, and writing data to and reading data from a sample file (created automatically when you
+                perform the first "write").
+            </p>
+            <h2>Sample Instructions</h2>
+            <p>
+                Click the button associated with the part of the sample you wish to run:
+                <ul>
+                    <li>Enumerate Pictures - Illustrates how to programmatically access files by enumerating and displaying all files in Pictures.</li>
+                    <li>Get properties of all files in Pictures - For all files in Pictures, displays top-level and basic properties.</li>
+                    <li>Write text to a sample file - Illustrates writing data to a file by writing the current timestamp to a file called FileHandlingJs.txt in Pictures. (This file is automatically created if it does not exist already.)</li>
+                    <li>Read text from a sample file - Illustrates reading data from a file by reading and displaying the contents of a file called FileHandlingJs.txt in Pictures.</li>
+                </ul>
+            </p>
+            <p>
+                <table cellpadding="15">
+                    <tr>
+                        <td><input id="EnumPictures" type="button" value="Enumerate pictures" /></td>
+                        <td><input id="GetFileProperties" type="button" value="Get properties of all files in Pictures" /></td>
+                        <td><input id="WriteTextToFile" type="button" value="Write text to sample file" /></td>
+                        <td><input id="ReadTextFromFile" type="button" value="Read text from sample file" /></td>
+                    </tr>
+                </table>
+            </p>
+            <h2>Output</h2>
+            <p id="Output"></p>
+        </section>
+    </div>
+</body>
+</html>

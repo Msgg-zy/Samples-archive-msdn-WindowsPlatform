@@ -1,0 +1,78 @@
+﻿<!--
+//*********************************************************
+//
+// Copyright (c) Microsoft. All rights reserved.
+// THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
+// ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
+// IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR
+// PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+//
+//*********************************************************
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>OneDrive Files Page (page 3 of 3)</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/OneDriveFilesPage/OneDriveFilesPage.css" rel="stylesheet" />
+    <script src="/pages/OneDriveFilesPage/OneDriveFilesPage.js"></script>
+</head>
+<body>
+    <!-- Page content -->
+    <div class="page OneDriveFilesPage" id="output">
+        <!-- Banner (title area) -->
+        <header role="banner" data-win-res="{attributes: { 'aria-label' : 'bannerAriaLabel'}}">
+            <!-- Localizable page heading (/strings/<lang spec>). -->
+            <h1 class="headlinetextarea win-type-ellipsis" data-win-res="{textContent: 'OneDriveFilesPageHeadline'}"></h1>
+        </header>
+        <!--  -->
+        <section role="main" data-win-res="{attributes: { 'aria-label' : 'mainContentAriaLabel'}}">
+            <h2>Feature Description</h2>
+            <p>
+                In Windows 8.1, users are able to mark OneDrive files as either available-offline (default) or online-only. This capability enables users to move large files (such as pictures and videos) to their OneDrive, mark them as online-only, and save disk space (as a file containing only metadata about the remote file is kept locally).
+            </p>
+            <h2>Sample Description</h2>
+            <p>
+                Get all the files in Pictures with their storage provider
+                (This PC, OneDrive, Network, etc.) and indicate whether they are currently available.
+            </p>
+            <h2>Sample Instructions</h2>
+            <p>
+                To test listing files that are on OneDrive, but unavailable, perform the following steps:
+                <ol>
+                    <li>Open the OneDrive app.</li>
+                    <li>Right-click the app, then click "New folder".</li>
+                    <li>Name the folder something like "Pictures on OneDrive", then click "Create".</li>
+                    <li>Click newly created folder to open it.</li>
+                    <li>Right-click anywhere on the page, then click "Add files".</li>
+                    <li>Browse to any local folder and select the desired file(s) to upload.</li>
+                    <li>Click "Copy to OneDrive".</li>
+                    <li>Right-click the newly added-to-OneDrive file(s), then click "Make online-only".</li>
+                    <li>When the confirmation dialog appears, click "Make online-only".</li>
+                    <li>Open a File Explorer window.</li>
+                    <li>Click on OneDrive (left panel).</li>
+                    <li>Right-click the folder you created earlier, then (from the context menu) click "Include in library->Pictures".</li>
+                    <li>Disconnect from OneDrive (e.g., unplug your ethernet cable or disable the network adapter).</li>
+                    <li>Click "Display Availability of Files in Pictures" below. The OneDrive file(s) you added earlier should be listed as "not available".</li>
+                </ol>
+            </p>
+            <p>
+                <table cellpadding="15">
+                    <tr>
+                        <td><input id="DisplayAvailability" type="button" value="Display Availability of Files in Pictures" /></td>
+                    </tr>
+                </table>
+            </p>
+            <h2>Output</h2>
+            <p id="Output"></p>
+        </section>
+    </div>
+</body>
+</html>
