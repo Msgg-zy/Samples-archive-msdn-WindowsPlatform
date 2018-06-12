@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DOUGE-BLUE01</Machine>
+    <WindowsUser>douge</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>77ECF89746E4F0EF41C7EDE476FAAA7BCA8DBCB6536858DFF68653811AFE3BBE</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>efa1867d-8805-4697-93ee-366a03cc7d2b_1.0.0.0_neutral__8aq6sfkzckaz6</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>efa1867d-8805-4697-93ee-366a03cc7d2b_8aq6sfkzckaz6!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>efa1867d-8805-4697-93ee-366a03cc7d2b</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=microsoft</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-06-24T21:29:51.399</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2013-06-24T19:15:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\pages\itemDetail\itemDetail.css">
+      <PackagePath>pages\itemDetail\itemDetail.css</PackagePath>
+      <Modified>2013-06-05T04:37:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\pages\groupDetail\groupDetail.css">
+      <PackagePath>pages\groupDetail\groupDetail.css</PackagePath>
+      <Modified>2013-06-05T19:13:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\pages\groupedItems\groupedItems.css">
+      <PackagePath>pages\groupedItems\groupedItems.css</PackagePath>
+      <Modified>2013-06-05T19:13:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-02-09T02:20:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-02-09T02:20:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-02-09T02:20:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-02-09T02:20:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\js\data.js">
+      <PackagePath>js\data.js</PackagePath>
+      <Modified>2013-04-29T05:03:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2013-06-24T18:50:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+      <Modified>2013-06-24T18:50:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\pages\itemDetail\itemDetail.js">
+      <PackagePath>pages\itemDetail\itemDetail.js</PackagePath>
+      <Modified>2013-06-05T04:37:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\pages\groupDetail\groupDetail.js">
+      <PackagePath>pages\groupDetail\groupDetail.js</PackagePath>
+      <Modified>2013-06-24T19:14:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\pages\groupedItems\groupedItems.js">
+      <PackagePath>pages\groupedItems\groupedItems.js</PackagePath>
+      <Modified>2013-06-24T19:16:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\pages\itemDetail\itemDetail.html">
+      <PackagePath>pages\itemDetail\itemDetail.html</PackagePath>
+      <Modified>2013-06-05T04:37:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\pages\groupDetail\groupDetail.html">
+      <PackagePath>pages\groupDetail\groupDetail.html</PackagePath>
+      <Modified>2013-06-05T04:37:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\pages\groupedItems\groupedItems.html">
+      <PackagePath>pages\groupedItems\groupedItems.html</PackagePath>
+      <Modified>2013-06-19T23:28:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2013-06-24T18:50:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\douge\Desktop\WDC Samples Ship List\GridAppWindowResizeTallLayout\js\GridAppWindowResizeTallLayout\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-06-24T21:29:51.383</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0.Preview\1.0\">
+      <Name>Microsoft.WinJS.2.0.Preview</Name>
+      <Version>1.0.9431.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0.Preview, MinVersion=1.0.9431.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0.Preview\1.0\Microsoft.WinJS.2.0.Preview.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
