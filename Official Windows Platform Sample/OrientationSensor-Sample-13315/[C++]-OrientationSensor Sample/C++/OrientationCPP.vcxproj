@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D6CB3D0D-61D5-4E44-B72C-9985A2F5FEDE}</ProjectGuid>
+    <RootNamespace>OrientationCPP</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VSVersion)' == '' and '$(VisualStudioVersion)' == ''">$(VCTargetsPath11)</VCTargetsPath>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <Immersive>true</Immersive>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <Immersive>true</Immersive>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Windows.Applicationmodel.Activation.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="Windows.Applicationmodel.Background.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="Windows.Applicationmodel.Contacts.provider.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="Windows.Applicationmodel.Contacts.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="Windows.Applicationmodel.Core.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="Windows.Applicationmodel.Datatransfer.sharetarget.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="Windows.Applicationmodel.Datatransfer.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="Windows.Applicationmodel.Infrastructure.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.applicationmodel.resources.core.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.applicationmodel.resources.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.applicationmodel.search.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.applicationmodel.store.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.applicationmodel.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.data.xml.dom.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.data.xml.xsl.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.devices.enumeration.pnp.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.devices.enumeration.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.devices.geolocation.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.devices.input.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.devices.portable.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.devices.sensors.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.devices.sms.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.foundation.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.globalization.collation.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.globalization.datetimeformatting.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.globalization.fonts.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.globalization.numberformatting.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.globalization.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.graphics.display.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.graphics.imaging.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.graphics.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.internal.security.authentication.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.management.core.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.management.deployment.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.media.capture.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.media.devices.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.media.playlists.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.media.playto.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.media.protection.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.media.transcoding.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.media.videoeffects.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.media.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.networking.backgroundtransfer.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.networking.connectivity.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.networking.networkoperators.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.networking.proximity.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.networking.pushnotifications.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.networking.sockets.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.networking.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.security.authentication.live.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.security.authentication.web.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.security.credentials.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.security.cryptography.certificates.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.security.cryptography.core.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.security.cryptography.dataprotection.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.security.cryptography.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.storage.accesscache.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.storage.bulkaccess.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.storage.compression.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.storage.fileproperties.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.storage.pickers.provider.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.storage.pickers.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.storage.search.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.storage.streams.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.storage.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.system.display.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.system.userprofile.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.system.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.applicationsettings.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.core.animationmetrics.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.core.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.input.inking.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.input.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.notifications.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.popups.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.startscreen.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.viewmanagement.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.webui.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.automation.peers.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.automation.provider.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.automation.text.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.automation.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.controls.primitives.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.controls.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.data.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.documents.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.input.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.interop.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.markup.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.media.animation.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.media.imaging.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.media.media3d.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.media.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.navigation.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.resources.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.shapes.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.ui.xaml.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.web.atompub.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="windows.web.syndication.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CppSamplesUtils.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="MainPage.xaml.h">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <None Include="light_generic.xaml">
+      <FileType>Document</FileType>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="microsoft-sdk.png" />
+    <Image Include="placeholder-sdk.png" />
+    <Image Include="smallTile-sdk.png" />
+    <Image Include="splash-sdk.png" />
+    <Image Include="squareTile-sdk.png" />
+    <Image Include="storeLogo-sdk.png" />
+    <Image Include="windows-sdk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="MainPage.xaml.cpp">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

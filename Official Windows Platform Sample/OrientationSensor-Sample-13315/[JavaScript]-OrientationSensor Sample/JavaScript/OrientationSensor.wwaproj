@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{917e2cb9-8013-4922-8551-dedbd5e31e81}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v11.0\WWAProject\Microsoft.VisualStudio.WWAProject.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" Label="Configuration">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'" Label="Configuration">
+  </PropertyGroup>
+  <Import Project="$(ProjectSystemBase)Microsoft.VisualStudio.WWAProject.props" />
+  <ItemGroup>
+    <Content Include="base-sdk.js" />
+    <Content Include="css\base-sdk.css" />
+    <Content Include="css\program.css" />
+    <Content Include="default.html" />
+    <Content Include="images\microsoft-sdk.png" />
+    <Content Include="images\placeholder-sdk.png" />
+    <Content Include="images\splash-sdk.png" />
+    <Content Include="images\windows-sdk.png" />
+    <Content Include="images\StoreLogo-sdk.png" />
+    <Content Include="images\squareTile-sdk.png" />
+    <Content Include="images\smallTile-sdk.png" />
+    <Content Include="program.js" />
+    <AppxManifest Include="Package.appxmanifest" />
+    <Content Include="winjs\css\ui-light.css" />
+    <Content Include="winjs\js\base.js" />
+    <Content Include="winjs\js\ui.js" />
+    <Content Include="winjs\js\wwaapp.js" />
+  </ItemGroup>
+  <Import Project="$(ProjectSystemBase)Microsoft.VisualStudio.WWAProject.targets" />
+</Project>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+
+  <Identity
+      Name="Microsoft.SDKSamples.Orientation.JS"
+      Version="1.0.0.0"
+      Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+      />
+
+  <Properties>
+    <DisplayName>Orientation Sensor SDK Sample</DisplayName>
+    <PublisherDisplayName>Microsoft Corporation</PublisherDisplayName>
+    <Description>Orientation Sensor SDK Sample</Description>
+    <Logo>images\storeLogo-sdk.png</Logo>
+  </Properties>
+
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Applications>
+    <Application
+        Id="OrientationSensor.RawData"
+        StartPage="default.html"
+        >
+      <VisualElements
+          DisplayName="Orientation Sensor Raw Data"
+          Logo="images\squareTile-sdk.png"
+          SmallLogo="images\smallTile-sdk.png"
+          Description="Orientation Sensor Raw Data"
+          ForegroundText="dark"
+          BackgroundColor="#FFFFFF"
+          ToastCapable="false"
+          >
+        <DefaultTile
+            ShortName="Orientation"
+            ShowName="true"
+            />
+        <SplashScreen
+            BackgroundColor="white"
+            Image="images\splash-sdk.png"
+            />
+      </VisualElements>
+    </Application>
+  </Applications>
+
+</Package>

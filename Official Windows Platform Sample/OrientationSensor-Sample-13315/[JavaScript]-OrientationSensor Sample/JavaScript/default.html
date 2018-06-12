@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Orientation Sensor Raw Data</title>
+
+    <!-- WinJS references -->
+    <link href="winjs/css/ui-light.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="WinJS/js/base.js"></script>
+    <script type="text/javascript" src="WinJS/js/ui.js"></script>
+    <script type="text/javascript" src="WinJS/js/wwaapp.js"></script>
+
+    <!-- SDK Base references -->
+    <link rel="stylesheet" type="text/css" href="css/base-sdk.css" />
+
+    <!-- Sample references -->
+    <link rel="stylesheet" type="text/css" href="css/program.css" />
+</head>
+<body role="application">
+    <div id="rootGrid">
+        <div id="header" role="contentinfo"></div>
+        <div id="content">
+            <h1 id="featureLabel">Orientation Sensor Raw Data</h1>
+
+            <h2 id="inputLabel">Input</h2>
+
+            <div id="input" role="main" aria-labelledby="inputLabel">
+                <div class="options">
+                    <h3 id="listLabel">Select scenario:</h3>
+                    <select size="2" id="scenarios" aria-labelledby="listLabel">
+                        <option selected="selected" value="1">1) OrientationSensor data events</option>
+                        <option value="2">2) Current orientation sensor reading</option>
+                    </select>
+                </div>
+                <div class="details" role="region" aria-labelledby="descLabel" aria-live="assertive">
+                    <h3 id="descLabel">Description:</h3>
+            
+                    <!-- Scenario 1 Input -->
+                    <div class="item" id="scenario1Input">
+                        <p>Registers an event listener for orientation sensor data and displays the rotation data as it is reported.</p>
+                        <button class="action" id="scenario1Open">Enable</button>
+                        <button class="action secondary" id="scenario1Revoke">Disable</button>
+                        <br /><br />
+                    </div>
+
+                    <!-- Scenario 2 Input -->
+                    <div class="item" id="scenario2Input">
+                        <p>Performs a single data request to retrieve the current orientation sensor reading</p>
+                        <button id="scenario2Get" class="action">Get</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="outputLabel"> Output</h2>
+
+            <div id="output" role="region" aria-labelledby="outputLabel" aria-live="assertive">
+                <div id="statusMessage"></div>
+
+                <!-- Scenario 1 Output -->
+                <div class="item" id="scenario1Output">
+                    Quaternion: <a id="eventOutputQuaternion">no data</a>
+                    <br />
+                    Rotation Matrix: <a id="eventOutputRotationMatrix">no data</a>
+                </div>
+
+                <!-- Scenario 2 Output -->
+                <div class="item" id="scenario2Output">
+                    Quaternion: <a id="readingOutputQuaternion">no data</a>
+                    <br />
+                    Rotation Matrix: <a id="readingOutputRotationMatrix">no data</a>
+                </div>
+            </div>
+        </div>
+        <div id="footer" role="contentinfo"></div>
+    </div>
+    <script type="text/javascript" src="base-sdk.js"></script>
+    <script type="text/javascript" src="program.js"></script>
+</body>
+</html>
