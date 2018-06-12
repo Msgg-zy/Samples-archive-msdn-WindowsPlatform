@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/b79636be-b088-48b5-8a8d-c21645d26d2fCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Windows Store app filehandling, start to finish sample</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Windows Store app filehandling, start to finish sample</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Visual Studio 2013, Windows Store app
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            File handling, Microsoft OneDrive
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">4/2/2014</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Windows-Store-app-b7ac5768">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>
+<p class="MsoNormal" style="margin-bottom:10.0pt; line-height:115%; text-autospace:none">
+<span style="font-size:small"><span style="line-height:115%">An instructional sample app for Windows 8.1 Preview that implements common file-handling features. This is the companion sample for the
+</span><span style="line-height:115%"><a href="http://go.microsoft.com/fwlink/?LinkId=325354"><span style="line-height:115%; font-family:'Times New Roman',serif">File handling, start to finish</span></a></span><span style="line-height:115%">
+</span><span style="line-height:115%">article</span><span style="line-height:115%; font-family:'Times New Roman',serif">.</span></span></p>
+<p style="margin:0in; margin-bottom:.0001pt"><span style="font-size:small"><span lang="EN" style="font-family:Calibri,sans-serif">This sample, and the accompanying
+</span><span style="font-family:Calibri,sans-serif"><a href="http://go.microsoft.com/fwlink/?LinkId=325354"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">File handling, start to finish</span></a>
+</span><span lang="EN" style="font-family:Calibri,sans-serif">documentation,<strong><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;">
+</span></strong></span><span style="font-family:Calibri,sans-serif">illustrates how to add file handling capabilities to a Visual C# / XAML Windows Store app, from start to finish. The sample includes instructions and code to perform the following file-handling
+ tasks:</span><span style="font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+<p style="margin-left:30.0pt; text-indent:-.25in"><span style="font-size:small"><strong><span style="font-family:Calibri,sans-serif">File and Folder Pickers</span></strong><span style="font-family:Calibri,sans-serif"> &ndash; Pickers display a list of files
+ or folders from which a user can select one or more items for further processing. This sample includes code and guidance for presenting file and folder pickers to a user where a single file can be selected, multiple files can be selected, and a single folder
+ can be selected.</span></span></p>
+<p style="margin-left:30.0pt; text-indent:-.25in"><span style="font-size:small"><strong><span style="font-family:Calibri,sans-serif">File Access Basics</span></strong><span style="font-family:Calibri,sans-serif"> &ndash; Illustrates several key file-access
+ features such as programmatically enumerating the files of a given folder, retrieving a file's properties (including top-level, basic, and extended properties), creating a file, and writing data to and reading data from a file.</span></span></p>
+<p style="margin-left:30.0pt; text-indent:-.25in"><span style="font-size:small"><strong><span style="font-family:Calibri,sans-serif">Smart Files</span></strong><span style="font-family:Calibri,sans-serif"> &ndash; Microsoft OneDrive files can be marked as either
+ available-offline (default) or online-only. This capability enables users to move large files (such as pictures and videos) to their OneDrive, mark them as online-only, and save disk space (as a file containing only metadata about the remote file is kept locally).
+ This sample illustrates how to use the new <a href="http://go.microsoft.com/fwlink/?LinkID=324487">
+StorageFile.IsAvailable</a> property to determine if a file is currently available.
+</span></span></p>
+<p class="MsoNormal" style="margin:5pt 0in"><span style="font-size:small; font-family:'Times New Roman',serif">&nbsp;</span></p>
+<p><span style="font-size:small"><span style="font-family:Calibri,sans-serif">This sample includes all the things that are discussed in the
+</span><span style="font-family:Calibri,sans-serif"><a href="http://go.microsoft.com/fwlink/?LinkId=325354"><span style="font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">File handling, start to finish</span></a></span><span style="font-family:Calibri,sans-serif"> topic.</span></span></p>
+<p class="MsoNormal" style="margin:5pt 0in"><span style="font-size:small"><strong><span lang="EN"><br>
+</span></strong><strong><span lang="EN">SEE ALSO</span></strong></span></p>
+<p class="MsoNormal" style="margin:5pt 0in"><span style="font-size:small"><a href="http://go.microsoft.com/fwlink/?LinkId=325354">File handling, start to finish</a></span></p>
+</h1>
+<div class="mcePaste" id="_mcePaste" style="left:-10000px; top:0px; width:1px; height:1px; overflow:hidden">
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

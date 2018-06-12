@@ -1,0 +1,30 @@
+﻿<!--
+//*********************************************************
+//
+// Copyright (c) Microsoft. All rights reserved.
+// THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
+// ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
+// IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR
+// PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+//
+//*********************************************************
+-->
+<UserControl
+    x:Class="FileHandling.FileHandlingAppBar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FileHandling"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid Background="Black">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Button Name="FileAccessBasicsButton" Margin="10,0,0,0" Content="File Access Basics" Click="PageButton_Click" Tag="FileAccessBasicsPage" />
+            <Button Name="FilePickerButton" Margin="10,0,0,0" Content="File and Folder Pickers" Click="PageButton_Click" Tag="FilePickerPage"/>
+            <Button Name="SkyDriveFilesButton" Margin="10,0,0,0" Content="SkyDrive Files" Click="PageButton_Click" Tag="SkyDriveFilesPage"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
