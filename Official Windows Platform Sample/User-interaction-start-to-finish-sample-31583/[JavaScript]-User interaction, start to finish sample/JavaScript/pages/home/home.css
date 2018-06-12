@@ -1,0 +1,228 @@
+﻿/*
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+*/
+
+/*
+Local styles for /pages/[page].
+*/
+.home section[role=main] {
+    margin-left: 120px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-grid-columns: 600px 400px 600px;
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+}
+
+    .home section[role=main] #description {
+        width: 550px;
+        -ms-grid-column: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* Space for scroll bar. */
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .home section[role=main] #form {
+        width: 350px;
+        -ms-grid-column: 2;
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* Space for scroll bar. */
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .home section[role=main] #colormixerarea {
+        -ms-grid-column: 3;
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* Space for scroll bar. */
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+
+div .ColorSelectorButton {
+    touch-action: none;
+    -ms-grid-rows: 1fr 120px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    display: -ms-grid;
+    position: relative;
+    width: 100%;
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    div .ColorSelectorButton .ColorLabel {
+        -ms-grid-row: 1;
+        border-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    div .ColorSelectorButton .Color {
+        -ms-grid-row: 2;
+        border-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        div .ColorSelectorButton .Color#buttonRed {
+            -ms-grid-column: 1;
+            background-color: red;
+        }
+
+        div .ColorSelectorButton .Color#buttonGreen {
+            -ms-grid-column: 2;
+            background-color: green;
+        }
+
+        div .ColorSelectorButton .Color#buttonBlue {
+            -ms-grid-column: 3;
+            background-color: blue;
+        }
+
+div .win-listview#listViewColor {
+    height: auto;
+}
+
+div .ColorSelectorRadio {
+    touch-action: none;
+    -ms-grid-rows: 1fr 60px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    display: -ms-grid;
+    position: relative;
+    width: 100%;
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    div .ColorSelectorRadio .ColorLabel {
+        -ms-grid-row: 1;
+        border-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    div .ColorSelectorRadio .Color {
+        -ms-grid-row: 2;
+        border-style: none;
+        margin: 0px;
+        padding: 10px;
+    }
+
+        div .ColorSelectorRadio .Color#red {
+            -ms-grid-column: 1;
+        }
+
+        div .ColorSelectorRadio .Color#green {
+            -ms-grid-column: 2;
+        }
+
+        div .ColorSelectorRadio .Color#blue {
+            -ms-grid-column: 3;
+        }
+
+div .ColorSelectorList {
+    touch-action: none;
+    position: relative;
+    width: 100%;
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    div .ColorSelectorList .Color {
+        width: 100%;
+    }
+
+div .ColorSelectorText {
+    touch-action: none;
+    position: relative;
+    width: 100%;
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    div .ColorSelectorText .ColorField {
+        width: 100%;
+    }
+
+div .RotationSelectorSlider {
+    touch-action: none;
+    position: relative;
+    width: 100%;
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    /*div .RotationSelectorSlider .Rotation {
+        width: 100%;
+    }*/
+
+    div .RotationSelectorSlider #rangeContainer {
+        -ms-grid-columns: 20px 1fr 30px;
+        -ms-grid-rows: 20px 1fr;
+        display: -ms-grid;
+        /*border-style: solid;
+        border-width: thin;
+        border-color: red;*/
+    }
+
+    div .RotationSelectorSlider #rangeMin {
+            -ms-grid-column: 1;
+            -ms-grid-row: 2;
+            text-align: right;
+    }
+    div .RotationSelectorSlider #rangeControl {
+            -ms-grid-column: 2;
+            -ms-grid-row: 2;
+    }
+    div .RotationSelectorSlider #rangeMax {
+            -ms-grid-column: 3;
+            -ms-grid-row: 2;
+    }
+    div .RotationSelectorSlider #rangeCurrent {
+        -ms-grid-column-span: 3;
+        -ms-grid-row: 1;
+        text-align: center;
+    }
+
+div .RotationSelectorText {
+    touch-action: none;
+    position: relative;
+    width: 100%;
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    div .RotationSelectorText .RotationField {
+        width: 100%;
+    }
+
+.ColorLabel {
+    color: ButtonHighlight;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+
+.RotationLabel {
+    color: ButtonHighlight;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+
+fieldset {
+    border: 0px;
+}

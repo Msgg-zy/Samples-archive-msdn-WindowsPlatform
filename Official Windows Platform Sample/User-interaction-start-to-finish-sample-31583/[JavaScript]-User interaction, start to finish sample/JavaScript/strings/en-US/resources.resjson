@@ -1,0 +1,79 @@
+﻿// Resource comments should provide guidance to localizers. They should clarify 
+// the sense or context, and point out any constraints on the string. 
+// It’s not necessary to have a comment in all cases. Add comments where useful. 
+// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836.
+
+{
+// App manifest resources.
+    // All values of the token string created for the DisplayName element in the package manifest must match 
+    // the names that you’ve reserved for the app at the Windows Store. Otherwise, a validation error will occur 
+    // when you upload the package to the Store.
+    "displayName"                       : "User Interaction - Platform Controls (HTML)",
+    "_displayName.comment"              : "The title of the application that appears on the start screen, search page, and so on (up to 256 characters in length).",
+
+
+    "description"                       : "Use platform controls to provide user interactions that are intuitive and engaging, and at the same time efficient and consistent across all input devices. Follow the guidelines, best practices, and examples described here to define these user experiences for your Windows Store app.",
+    "_description.comment"              : "Description of the app (up to 2048 characters).",
+
+    "shortName"                         : "UIxPlatform",
+    "_shortName.comment"                : "Short name for the app displayed on the tile (up to 40 characters).",
+// App manifest resources.
+
+// UI resources
+    "greeting"              : "Hello",
+    "_greeting.comment"     : "A welcome greeting.",
+
+    "disclaimer"              : "THIS CODE AND INFORMATION IS PROVIDED 'AS IS' WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.\n\nCopyright (c) Microsoft Corporation. All rights reserved",
+    "_disclaimer.comment"     : "Body text for usage disclaimer message box.",
+
+    "disclaimerTitle"              : "Disclaimer",
+    "_disclaimerTitle.comment"     : "Title for usage disclaimer message box.",
+
+    "disclaimerButton"              : "Accept",
+    "_disclaimerButton.comment"     : "Text for usage disclaimer message box button.",
+
+    "navbarHomeLabel"              : "Home",
+    "_navbarHomeLabel.comment"     : "Text for NavBar Home button.",
+
+    "navbarHomeTooltip"              : "Go to home page",
+    "_navbarHomeTooltip.comment"     : "Tooltip text for Home button on NavBar.",
+
+    "navbarPage2Label"              : "Page 2",
+    "_navbarPage2Label.comment"     : "Text for Page 2 button on NavBar.",
+
+    "navbarPage2Tooltip"              : "Go to page 2",
+    "_navbarPage2Tooltip.comment"     : "Tooltip text for Page 2 button on NavBar.",
+
+    "appbarHelpLabel"              : "Help",
+    "_appbarHelpLabel.comment"     : "Text for Help button on AppBar.",
+
+    "appbarHelpTooltip"              : "Show help for this app",
+    "_appbarHelpTooltip.comment"     : "Tooltip text for Help button on AppBar.",
+
+    "bannerAriaLabel"              : "Banner content",
+    "mainContentAriaLabel"         : "Main content",
+
+    // Home page content: see \pages\home\[locale]\home.html
+    "homePageHeadline"              : "User interaction, start to finish (HTML)",
+    "_homePageHeadline.comment"     : "Headline or title for the Home page content.",
+
+    "homePageDeck"              : "This instructional sample app for Windows 8.1 demonstrates many of our recommendations for user interactions with platform controls.",
+    "_homePageDeck.comment"     : "Phrase, sentence, or several sentences such as a quick blurb or content teaser.",
+
+    "colorpickerRed"           : "Red",
+    "colorpickerGreen"         : "Green",
+    "colorpickerBlue"          : "Blue",
+    "colorpickerMulti"         : "Color",
+    "red"                       : "Red",
+    "green"                     : "Green",
+    "blue"                      : "Blue",
+    "colorsText"                : "red, green, or blue",
+    "colorsPattern"             : "^([Rr][Ee][Dde]|[Bb][Ll][Uu][Ee]|[Gg][Rr][Ee][Ee][Nn])$",
+    "colorSelectorFlyout"       : "Color selector flyout",
+    "rotation"                  : "Rotation (0 - 359)",
+    "rotationText"              : "0 to 359",
+    "rotationPattern"           : "^([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-9][0-9]|3[0-5][0-9])$",
+    "applyColor"                : "Apply color",
+    "applyRotation"             : "Apply rotation"
+// End UI resources
+}

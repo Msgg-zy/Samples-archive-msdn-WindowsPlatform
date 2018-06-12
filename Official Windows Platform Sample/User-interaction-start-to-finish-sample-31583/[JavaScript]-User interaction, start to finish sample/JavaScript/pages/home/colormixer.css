@@ -1,0 +1,27 @@
+﻿/*
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+*/
+
+/*
+Local style for color mixer.
+*/
+div #colorMixer {
+    position: relative;
+    touch-action: none;
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 400px;
+    height: 400px;
+    -ms-transform-origin: 50% 50%;
+    background-color: black;
+    border-color: white;
+    border-bottom-color: red;
+    border-width: thick;
+    border-style: solid;
+}
