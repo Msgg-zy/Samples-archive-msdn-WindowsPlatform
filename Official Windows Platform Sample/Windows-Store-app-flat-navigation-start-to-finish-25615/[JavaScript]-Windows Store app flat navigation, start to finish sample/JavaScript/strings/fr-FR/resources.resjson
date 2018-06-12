@@ -1,0 +1,80 @@
+﻿// Resource comments should provide guidance to localizers. They should clarify 
+// the sense or context, and point out any constraints on the string. 
+// It’s not necessary to have a comment in all cases. Add comments where useful. 
+// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836.
+
+// This non-EN-US resource file is provided for demonstration purposes only.
+
+{
+// App manifest resources.
+    // All values of the token string created for the DisplayName element in the package manifest must match 
+    // the names that you’ve reserved for the app at the Windows Store. Otherwise, a validation error will occur 
+    // when you upload the package to the Store.
+    "displayName"                       : "FlatNavTemplate (JavaScript)",
+    "_displayName.comment"              : "The title of the application that appears on the start screen, search page, and so on (up to 256 characters in length)",
+
+
+    "description"                       : "Windows Store app flat navigation template (JavaScript).",
+    "_description.comment"              : "Description of the app (up to 2048 characters)",
+
+    "shortName"                         : "FlatNav",
+    "_shortName.comment"                : "Short name for the app displayed on the tile (up to 40 characters)",
+// App manifest resources.
+
+// UI resources
+    "appName"              : "App nom",
+    "_appName.comment"     : "App name displayed on opening page.",
+
+    "greeting"              : "Bonjour",
+    "_greeting.comment"     : "A welcome greeting.",
+
+    "disclaimer"              : "CE CODE ET DE L'INFORMATION EST FOURNI «TEL QUEL», SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, Y COMPRIS, MAIS SANS S'Y LIMITER, LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET/OU D'ADEQUATION A UN USAGE PARTICULIER.\n\nCopyright (c) Microsoft Corporation. Tous droits réservés",
+    "_disclaimer.comment"     : "Body text for usage disclaimer message box.",
+    
+    "disclaimerTitle"              : "Désistement",
+    "_disclaimerTitle.comment"     : "Title for usage disclaimer message box.",
+
+    "disclaimerButton"              : "Accepter",
+    "_disclaimerButton.comment"     : "Text for usage disclaimer message box button.",
+
+    "navbarHomeLabel"              : "Page d'accueil",
+    "_navbarHomeLabel.comment"     : "Text for NavBar Home button.",
+
+    "navbarHomeTooltip"              : "Go to the home page",
+    "_navbarHomeTooltip.comment"     : "Tooltip text for Home button on NavBar.",
+
+    "navbarPage2Label"              : "Page 2",
+    "_navbarPage2Label.comment"     : "Text for Page 2 button on NavBar.",
+
+    "navbarPage2Tooltip"              : "Go to page 2",
+    "_navbarPage2Tooltip.comment"     : "Tooltip text for Page 2 button on NavBar.",
+
+    "appbarHelpLabel"              : "Aider",
+    "_appbarHelpLabel.comment"     : "Text for Help button on AppBar.",
+
+    "appbarHelpTooltip"              : "Afficher l'aide pour cette app",
+    "_appbarHelpTooltip.comment"     : "Tooltip text for Help button on AppBar.",
+
+    "bannerAriaLabel"              : "Banner content",
+    "mainContentAriaLabel"         : "Main content",
+
+    "homePageHeadline"              : "Bienvenue dans votre app!",
+    "_homePageHeadline.comment"     : "Headline or title for the Home page content.",
+
+    "homePageDeck"         : "Liste de contrôle pour les échantillons fichier gallery.xml 8.1 de Windows",
+    "_homePageDeck.comment"    : "Phrase, sentence, or several sentences such as a quick blurb or content teaser",
+
+    // Home page content: see \pages\home\[locale]\home.html
+
+    "secondPageHeadline"              : "Page 2",
+    "_secondPageTitle.comment"     : "Headline or title for the Page 2 content.",
+
+    "secondPageDeck"         : "fr-FR",
+    "_secondPageDeck.comment"    : "Second page deck.",
+
+    // Second page content: see \pages\home\[locale]\page2.html
+
+    "nextPageButton"              : "Page suivante",
+    "_nextPageButton.comment"     : "Text for link to Page 2 on Home page."
+// End UI resources
+}

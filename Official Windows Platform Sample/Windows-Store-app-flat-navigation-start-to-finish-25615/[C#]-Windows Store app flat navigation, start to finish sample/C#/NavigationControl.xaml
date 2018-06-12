@@ -1,0 +1,25 @@
+﻿<UserControl
+    x:Class="FlatNavTemplate.NavigationControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FlatNavTemplate"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    <UserControl.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="140"/>
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </UserControl.Resources>
+
+    <StackPanel Orientation="Horizontal">
+        <Button x:Uid="appbarHome" Click="NavButton_Click" Tag="FlatNavTemplate.Pages.HomePage"/>
+        <Button x:Uid="appbarPage2" Click="NavButton_Click" Tag="FlatNavTemplate.Pages.Page2"/>
+        <!-- Add more buttons here as needed for new pages. -->
+        <!-- Assign the fully qualified page name to the button's Tag property. -->
+    </StackPanel>
+</UserControl>

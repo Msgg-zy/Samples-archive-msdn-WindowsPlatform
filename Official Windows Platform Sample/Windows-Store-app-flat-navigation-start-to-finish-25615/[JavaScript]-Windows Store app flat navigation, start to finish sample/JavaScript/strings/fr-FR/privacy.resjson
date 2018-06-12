@@ -1,0 +1,16 @@
+﻿// Resource comments should provide guidance to localizers. They should clarify 
+// the sense or context, and point out any constraints on the string. 
+// It’s not necessary to have a comment in all cases. Add comments where useful. 
+// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+
+// This non-EN-US resource file is provided for demonstration purposes only.
+
+{
+    "privacyFlyoutAriaLabel"         : "Privacy flyout",
+
+    "settingsPrivacyLabel"                       : "Confidentialité",
+    "settingsPrivacyLabel.comment"              : "Text for Privacy button in Settings.",
+
+    "settingsPrivacyContent"                       : "<h3>Confidentialité</h3><p>[!!!Localize your privacy content to fr-FR -- see remarks for this item in en-US\\privacy.resjson!!!]</p>",
+    "settingsPrivacyContent.comment"              : "HTML content of Privacy statement in Settings."
+}

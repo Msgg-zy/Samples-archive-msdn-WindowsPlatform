@@ -1,0 +1,78 @@
+﻿// Resource comments should provide guidance to localizers. They should clarify 
+// the sense or context, and point out any constraints on the string. 
+// It’s not necessary to have a comment in all cases. Add comments where useful. 
+// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836.
+
+{
+// App manifest resources.
+    // All values of the token string created for the DisplayName element in the package manifest must match 
+    // the names that you’ve reserved for the app at the Windows Store. Otherwise, a validation error will occur 
+    // when you upload the package to the Store.
+    "displayName"                       : "FlatNavTemplate (JavaScript)",
+    "_displayName.comment"              : "The title of the application that appears on the start screen, search page, and so on (up to 256 characters in length).",
+
+
+    "description"                       : "Windows Store app flat navigation template (JavaScript).",
+    "_description.comment"              : "Description of the app (up to 2048 characters).",
+
+    "shortName"                         : "FlatNav",
+    "_shortName.comment"                : "Short name for the app displayed on the tile (up to 40 characters).",
+// App manifest resources.
+
+// UI resources
+    "appName"              : "Windows SDK: App name",
+    "_appName.comment"     : "App name displayed on opening page.",
+
+    "greeting"              : "Hello",
+    "_greeting.comment"     : "A welcome greeting.",
+
+    "disclaimer"              : "THIS CODE AND INFORMATION IS PROVIDED 'AS IS' WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.\n\nCopyright (c) Microsoft Corporation. All rights reserved",
+    "_disclaimer.comment"     : "Body text for usage disclaimer message box.",
+
+    "disclaimerTitle"              : "Disclaimer",
+    "_disclaimerTitle.comment"     : "Title for usage disclaimer message box.",
+
+    "disclaimerButton"              : "Accept",
+    "_disclaimerButton.comment"     : "Text for usage disclaimer message box button.",
+
+    "navbarHomeLabel"              : "Home",
+    "_navbarHomeLabel.comment"     : "Text for NavBar Home button.",
+
+    "navbarHomeTooltip"              : "Go to home page",
+    "_navbarHomeTooltip.comment"     : "Tooltip text for Home button on NavBar.",
+
+    "navbarPage2Label"              : "Page 2",
+    "_navbarPage2Label.comment"     : "Text for Page 2 button on NavBar.",
+
+    "navbarPage2Tooltip"              : "Go to page 2",
+    "_navbarPage2Tooltip.comment"     : "Tooltip text for Page 2 button on NavBar.",
+
+    "appbarHelpLabel"              : "Help",
+    "_appbarHelpLabel.comment"     : "Text for Help button on AppBar.",
+
+    "appbarHelpTooltip"              : "Show help for this app",
+    "_appbarHelpTooltip.comment"     : "Tooltip text for Help button on AppBar.",
+
+    "bannerAriaLabel"              : "Banner content",
+    "mainContentAriaLabel"         : "Main content",
+
+    "homePageHeadline"              : "Welcome to your app!",
+    "_homePageHeadline.comment"     : "Headline or title for the Home page content.",
+
+    "homePageDeck"         : "Gallery.xml file checklist for Windows 8.1 samples",
+    "_homePageDeck.comment"    : "Phrase, sentence, or several sentences such as a quick blurb or content teaser.",
+
+    // Home page content: see \pages\home\[locale]\home.html
+
+    "secondPageHeadline"              : "Page 2",
+    "_secondPageTitle.comment"     : "Headline or title for the Page 2 content.",
+
+    "secondPageDeck"         : "Specific information about functionality on page.",
+    "_secondPageDeck.comment"    : "Phrase, sentence, or several sentences such as a quick blurb or content teaser.",
+
+    // Second page content: see \pages\home\[locale]\page2.html
+
+    "nextPageButton"              : "Next page",
+    "_nextPageButton.comment"     : "Text for link to Page 2 on Home page."
+// End UI resources
+}

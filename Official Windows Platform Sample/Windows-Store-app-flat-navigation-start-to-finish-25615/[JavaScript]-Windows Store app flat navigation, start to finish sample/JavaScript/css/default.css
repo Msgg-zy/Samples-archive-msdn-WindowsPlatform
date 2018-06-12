@@ -1,0 +1,91 @@
+﻿/*
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+
+For an introduction to the Navigation template, see http://go.microsoft.com/fwlink/?LinkId=232506.
+For an introduction to the Page Control template, see http://go.microsoft.com/fwlink/?LinkId=232511.
+For Avoiding common certification failures, see http://go.microsoft.com/fwlink/?LinkId=268354.
+*/
+
+/*
+GLobal styles, which stay consistent from page to page.
+Local styles are specified in the CSS file for each page (see /pages/[page]).
+*/
+
+#contenthost {
+    height: 100%;
+    width: 100%;
+    overflow: auto; 
+}
+
+.win-navbar {
+    background-color: #00b2f0;
+}
+
+.win-appbar {
+    background-color: #00b2f0;
+}
+
+/* Define the page layout grid with rows for a banner and a body. */
+.page {
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 128px 1fr;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+}
+
+/* Define a banner grid with columns for an image and title. */
+    .page header[role=banner] {
+        -ms-grid-row: 1;
+        -ms-grid-columns: 120px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+    }
+
+/* The banner image. */
+    .page header[role=banner] .headlineimagearea {
+        -ms-grid-column: 1;
+    }
+
+/* The banner title. */
+    .page header[role=banner] .headlinetextarea {
+       -ms-grid-column: 2;
+        margin-top: 37px;
+    }
+
+/* The body. */
+    .page section[role=main] {
+        -ms-grid-row: 2;
+    }
+    
+/* 
+    Use media attributes to adapt the content of your app to 
+    suit the app and device state.
+*/
+/*
+    Handling snap states. 
+    For this example, we change the background color of the page content 
+    when width is less than 500 pixels (the minimum width of an app).
+*/
+@media (max-width:499px) {
+    .page section[role=main] {
+        background-color: #ff0000
+    }
+}
+
+/* 
+    Handling device orientation.
+    For this example, we change the background color of the 
+    page content when device is in portrait mode.
+*/
+@media (orientation: portrait) {
+    .page section[role=main] {
+        background-color: #ff0000
+    }
+}
+
