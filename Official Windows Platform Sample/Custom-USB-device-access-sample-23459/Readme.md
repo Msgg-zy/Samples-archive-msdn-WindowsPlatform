@@ -390,7 +390,7 @@ If you specify the device class code, make sure that it is supported. For a list
 <p><img src="/windowsapps/site/view/file/102720/1/image.png" alt="" align="middle">
 </p>
 </li><li>To send a USB vendor control transfer, select <b>2) Control Transfer</b>. Set the blink pattern to initiate a transfer.
-<p><img src="/windowsapps/site/view/file/102721/1/image.png" alt="" align="middle">
+<p><img src="Custom-USB-device-access-sample-23459/102721-image.png" alt="" align="middle">
 </p>
 </li><li>To perform interrupt data transfers, select <b>3) Interrupt Pipes</b>. For the SuperMUTT device, you can read and write data. To write data, click the
 <b>Write To Interrupt Out</b> button. The transfer writes 1024 bytes to the interrupt OUT endpoint. Number of bytes is the maximum packet size supported by the endpoint. To read from the device, click
