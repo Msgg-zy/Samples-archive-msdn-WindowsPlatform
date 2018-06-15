@@ -422,11 +422,3 @@ Register For Interrupt Event</b> and then press switches on the board to generat
 <p>The OSR FX2 board can hold up to 2048 bytes. If the buffer is full, subsequent writes wait until the buffer can fit more data.</p>
 </li></ol>
 </div>
-t because the sync scenario runs in a separate process. As a result, the user is prompted to allow access to the device. The output string shows the device instance of the device that is closed.</p>
-<p><img src="102729-image.png" alt="" align="middle">
-</p>
-<p>To cancel an in-progress sync operation, select <b>Cancel Sync with the device</b>.
-</p>
-<p>The OSR FX2 board can hold up to 2048 bytes. If the buffer is full, subsequent writes wait until the buffer can fit more data.</p>
-</li></ol>
-</div>
